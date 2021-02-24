@@ -94,6 +94,11 @@ class Trainer:
             loss=collections.OrderedDict(),
             accuracy=collections.OrderedDict()
         )
+        # Added test_history as well
+        self.test_history = dict(
+            loss=collections.OrderedDict(),
+            accuracy=collections.OrderedDict()
+        )        
         self.checkpoint_dir = pathlib.Path("checkpoints")
 
     def validation_step(self):
@@ -102,11 +107,28 @@ class Trainer:
             Train, validation and test.
         """
         self.model.eval()
+        
+        # Validation
         validation_loss, validation_acc = compute_loss_and_accuracy(
             self.dataloader_val, self.model, self.loss_criterion
         )
         self.validation_history["loss"][self.global_step] = validation_loss
         self.validation_history["accuracy"][self.global_step] = validation_acc
+
+        # Train
+        train_loss, train_acc = compute_loss_and_accuracy(
+            self.dataloader_train, self.model, self.loss_criterion
+        )
+        self.train_history["loss"][self.global_step] = train_loss
+        self.train_history["accuracy"][self.global_step] = train_acc
+        
+        # Test
+        test_loss, test_acc = compute_loss_and_accuracy(
+            self.dataloader_test, self.model, self.loss_criterion
+        )
+        self.test_history["loss"][self.global_step] = test_loss
+        self.test_history["accuracy"][self.global_step] = test_acc
+
         used_time = time.time() - self.start_time
         print(
             f"Epoch: {self.epoch:>1}",

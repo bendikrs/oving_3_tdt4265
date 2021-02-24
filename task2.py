@@ -143,4 +143,9 @@ if __name__ == "__main__":
         dataloaders
     )
     trainer.train()
+    # code for calculating all the accuracies in task 2b)
+    final_test_acc = list(trainer.test_history["accuracy"].values())[-1]
+    final_val_acc = list(trainer.validation_history["accuracy"].values())[-1]
+    final_train_acc = list(trainer.train_history["accuracy"].values())[-1]
+    print(f'Final validation accuracy {final_val_acc}\nFinal train accuracy {final_train_acc}\nFinal test accuracy {final_test_acc}\n')
     create_plots(trainer, "task2")
