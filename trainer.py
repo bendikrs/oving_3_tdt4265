@@ -23,7 +23,7 @@ def compute_loss_and_accuracy(
     """
     average_loss = 0
     accuracy = 0
-    n_correct = 0
+    n_correct, n_img, sum_loss, n_batches = 0, 0, 0, 0
     # TODO: Implement this function (Task  2a)
     with torch.no_grad():
         for (X_batch, Y_batch) in dataloader:
@@ -33,15 +33,16 @@ def compute_loss_and_accuracy(
             # Forward pass the images through our model
             output_probs = model(X_batch)
 
-            # Dette er ikkje ferdig ------------------------------------------------------>>
-            
             # Compute Loss
-            average_loss = loss_criterion.CrossEntropyLoss()
-            # Compute Accuracy 
-            n_correct += torch.sum(torch.argmax(output_probs) == torch.argmax(Y_batch))
-            accuracy = (accuracy + (n_correct/(torch.Size(X_batch)[0])))/2
+            sum_loss  += loss_criterion(output_probs, Y_batch) # adding the loss for a batch to the total loss
+            # Compute Accuracy
+            n_batches += 1
+            n_img += X_batch.shape[0]
+            for i in range(X_batch.shape[0]): # Summing the correct predictions to the n_correct variable
+                n_correct += torch.sum(torch.argmax(output_probs[i]) == Y_batch[i])
 
-            # ----------------------------------------------------------------------------<<
+    accuracy = (n_correct/n_img)
+    average_loss = sum_loss/n_batches
 
     return average_loss, accuracy
 

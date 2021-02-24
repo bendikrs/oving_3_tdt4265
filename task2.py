@@ -1,3 +1,4 @@
+from collections import OrderedDict
 import pathlib
 import matplotlib.pyplot as plt
 import utils
@@ -17,20 +18,65 @@ class ExampleModel(nn.Module):
                 image_channels. Number of color channels in image (3)
                 num_classes: Number of classes we want to predict (10)
         """
-        super().__init__()
+        super(ExampleModel, self).__init__() # usikker på om exampleModel og self egentlig skal inn her
         # TODO: Implement this function (Task  2a)
         num_filters = 32  # Set number of filters in first conv layer
         self.num_classes = num_classes
         # Define the convolutional layers
-        self.feature_extractor = nn.Sequential(
-            nn.Conv2d(
-                in_channels=image_channels,
-                out_channels=num_filters,
-                kernel_size=5,
-                stride=1,
-                padding=2
-            )
-        )
+        # self.feature_extractor = nn.Sequential(
+        #     nn.Conv2d(
+        #         in_channels=image_channels,
+        #         out_channels=num_filters,
+        #         kernel_size=5,
+        #         stride=1,
+        #         padding=2
+        #     )
+
+        self.modelList = OrderedDict([
+            ('conv1', nn.Conv2d(
+                in_channels=image_channels, 
+                out_channels=num_filters, 
+                kernel_size=5, stride=1, padding=2
+            )),
+            ('relu1', nn.ReLU()),
+            ('maxPool1', nn.MaxPool2d(
+                kernel_size=2,
+                stride=2
+            )),
+            ('conv2', nn.Conv2d(
+                in_channels=num_filters, 
+                out_channels=num_filters*2, 
+                kernel_size=5, stride=1, padding=2
+            )),
+            ('relu2', nn.ReLU()),
+            ('maxPool2', nn.MaxPool2d(
+                kernel_size=2,
+                stride=2
+            )),
+            ('conv3', nn.Conv2d(
+                in_channels=num_filters*2, 
+                out_channels=num_filters*4, 
+                kernel_size=5, stride=1, padding=2
+            )),
+            ('relu3', nn.ReLU()),
+            ('maxPool3', nn.MaxPool2d(
+                kernel_size=2,
+                stride=2
+            )),
+            ('flattern', nn.Flatten(start_dim=1 # kanskje?
+            )),
+            ('fc1', nn.Linear(
+                in_features=4*4*128,
+                out_features=64
+            )),
+            ('relu4', nn.ReLU()),
+            ('out', nn.Linear(
+                in_features=64,
+                out_features=10
+            ))            
+        ])
+        self.model = nn.Sequential(self.modelList)
+        
         # The output of feature_extractor will be [batch_size, num_filters, 16, 16]
         self.num_output_features = 32*32*32
         # Initialize our last fully connected layer
@@ -38,9 +84,12 @@ class ExampleModel(nn.Module):
         # Outputs num_classes predictions, 1 for each class.
         # There is no need for softmax activation function, as this is
         # included with nn.CrossEntropyLoss
-        self.classifier = nn.Sequential(
+        
+        ''' # koffor er denne her? er ikkje siste laget 64 -> 10 units?
+        self.classifier = nn.Sequential( 
             nn.Linear(self.num_output_features, num_classes),
         )
+        '''
 
     def forward(self, x):
         """
@@ -50,7 +99,7 @@ class ExampleModel(nn.Module):
         """
         # TODO: Implement this function (Task  2a)
         batch_size = x.shape[0]
-        out = x
+        out = self.model(x)
         expected_shape = (batch_size, self.num_classes)
         assert out.shape == (batch_size, self.num_classes),\
             f"Expected output of forward pass to be: {expected_shape}, but got: {out.shape}"
