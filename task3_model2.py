@@ -5,7 +5,8 @@ import utils
 from torch import nn
 from dataloaders import load_cifar10
 from trainer import Trainer, compute_loss_and_accuracy
-
+from datetime import datetime
+from torchsummary import summary
 
 class Model2(nn.Module):
 
@@ -125,9 +126,25 @@ if __name__ == "__main__":
         dataloaders
     )
     trainer.train()
-    # code for calculating all the accuracies in task 2b)
-    final_test_acc = list(trainer.test_history["accuracy"].values())[-1]
+
+    
     final_val_acc = list(trainer.validation_history["accuracy"].values())[-1]
+    final_test_acc = list(trainer.test_history["accuracy"].values())[-1]
     final_train_acc = list(trainer.train_history["accuracy"].values())[-1]
-    print(f'Final validation accuracy {final_val_acc}\nFinal train accuracy {final_train_acc}\nFinal test accuracy {final_test_acc}\n')
-    create_plots(trainer, "task3_model2")
+    # print(f'Final validation accuracy {final_val_acc}')
+    # print(f'Final train accuracy {final_train_acc}')
+    # print(f'Final test accuracy {final_test_acc}')
+    
+    plotName = "task3_model2_" + datetime.now().strftime("%a_%H_%M")
+    header = "Task 3, Model 2"
+
+    f = open(pathlib.Path("plots").joinpath("plotlogs.txt"), "a")
+    f.write("\n--------------------------------------------------------------------" + \
+        plotName + "\n" + \
+        f'Final validation accuracy {final_val_acc}\n' + \
+        f'Final train accuracy {final_train_acc}\n' + \
+        f'Final test accuracy {final_test_acc}\n' +\
+        str(model) + \
+        "\n--------------------------------------------------------------------\n\n\n")
+    f.close()
+    create_plots(trainer, plotName, header)

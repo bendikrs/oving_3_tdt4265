@@ -3,6 +3,7 @@ from torch.utils.data.sampler import SubsetRandomSampler
 import torch
 import typing
 import numpy as np
+from torchvision.transforms.transforms import RandomPerspective, RandomVerticalFlip
 np.random.seed(0)
 
 mean = (0.5, 0.5, 0.5)
@@ -24,7 +25,9 @@ def load_cifar10(batch_size: int, validation_fraction: float = 0.1, task = "2"
         ])
     elif task == "3_model1": # The transforms for model1 in task 3
         transform_train = transforms.Compose([
-            transforms.ColorJitter(brightness=0.4),
+            # transforms.ColorJitter(brightness=0.2),
+            # transforms.RandomPerspective(),
+            # transforms.
             transforms.ToTensor(),
             transforms.Normalize(mean, std)
         ])
@@ -32,7 +35,7 @@ def load_cifar10(batch_size: int, validation_fraction: float = 0.1, task = "2"
             transforms.ToTensor(),
             transforms.Normalize(mean, std)
         ])
-    elif task == "3_model2": # The transforms for model1 in task 3
+    elif task == "3_model2": # The transforms for model2 in task 3
         transform_train = transforms.Compose([
             transforms.ToTensor(),
             transforms.Normalize(mean, std),
