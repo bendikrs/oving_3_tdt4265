@@ -23,14 +23,6 @@ class ExampleModel(nn.Module):
         num_filters = 32  # Set number of filters in first conv layer
         self.num_classes = num_classes
         # Define the convolutional layers
-        # self.feature_extractor = nn.Sequential(
-        #     nn.Conv2d(
-        #         in_channels=image_channels,
-        #         out_channels=num_filters,
-        #         kernel_size=5,
-        #         stride=1,
-        #         padding=2
-        #     )
 
         self.modelList = OrderedDict([
             ('conv1', nn.Conv2d(
@@ -84,12 +76,7 @@ class ExampleModel(nn.Module):
         # Outputs num_classes predictions, 1 for each class.
         # There is no need for softmax activation function, as this is
         # included with nn.CrossEntropyLoss
-        
-        ''' # koffor er denne her? er ikkje siste laget 64 -> 10 units?
-        self.classifier = nn.Sequential( 
-            nn.Linear(self.num_output_features, num_classes),
-        )
-        '''
+
 
     def forward(self, x):
         """
@@ -99,7 +86,7 @@ class ExampleModel(nn.Module):
         """
         # TODO: Implement this function (Task  2a)
         batch_size = x.shape[0]
-        # out = self.model._modules['conv1']
+        # out = self.model._modules['conv1'](x)
         out = self.model(x)
         expected_shape = (batch_size, self.num_classes)
         assert out.shape == (batch_size, self.num_classes),\
