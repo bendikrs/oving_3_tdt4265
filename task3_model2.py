@@ -49,15 +49,16 @@ class Model2(nn.Module):
                 kernel_size=5, stride=1, padding=2
             )),
             ('relu2', nn.ReLU()),
-            ('avgPool1', nn.AvgPool2d(
-                kernel_size=2
+            ('maxPool2', nn.MaxPool2d(
+                kernel_size=2,
+                stride=2
             )),
             ('conv3', nn.Conv2d(
                 in_channels=64, 
                 out_channels=128, 
                 kernel_size=3, stride=1, padding=1
             )),
-            ('batchNorm1', nn.BatchNorm2d(128)),
+            ('relu3', nn.ReLU()),
             ('maxPool3', nn.MaxPool2d(
                 kernel_size=2,
                 stride=2
@@ -129,6 +130,7 @@ if __name__ == "__main__":
     batch_size = 64
     learning_rate = 5e-2
     early_stop_count = 4
+    Optimizer = "Average SGD, weight decay = 0.001"
     dataloaders = load_cifar10(batch_size, task="3_model2")
     model = Model2(image_channels=3, num_classes=10)
     trainer = Trainer(
@@ -145,22 +147,25 @@ if __name__ == "__main__":
     final_val_acc = list(trainer.validation_history["accuracy"].values())[-1]
     final_test_acc = list(trainer.test_history["accuracy"].values())[-1]
     final_train_acc = list(trainer.train_history["accuracy"].values())[-1]
+    final_train_loss = list(trainer.train_history["loss"].values())[-1]
     print(f'Final validation accuracy {final_val_acc}')
     print(f'Final train accuracy {final_train_acc}')
     print(f'Final test accuracy {final_test_acc}')
-    
-    plotName = "task3_model2_" + datetime.now().strftime("%a_%H_%M")
-    header = "Task 3, Model 2"
-    
-    summary(trainer.model, (3,32,32))
+    print(f'Final train loss {final_train_loss}')
 
+    plotName = "task3_model1_" + datetime.now().strftime("%a_%H_%M")
+    header = "Task 3, Model 1"
+
+    summary(trainer.model, (3,32,32))
     f = open(pathlib.Path("plots").joinpath("plotlogs.txt"), "a")
     f.write("\n--------------------------------------------------------------------" + \
         plotName + "\n" + \
         f'Final validation accuracy {final_val_acc}\n' + \
         f'Final train accuracy {final_train_acc}\n' + \
         f'Final test accuracy {final_test_acc}\n' +\
+        f'Final train loss {final_train_loss}\n' + \
         f'Batch size: {batch_size}, Learning rate: {learning_rate}\n' +\
+        f'Optimizer: {Optimizer} \n' +\
         str(model) + \
         "\n--------------------------------------------------------------------\n\n\n")
     f.close()

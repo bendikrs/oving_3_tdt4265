@@ -5,7 +5,7 @@ from torch.utils import data
 import utils
 from torch import nn
 from dataloaders import load_cifar10
-from trainer import Trainer, compute_loss_and_accuracy
+from trainer import Trainer, compute_loss_and_accuracy, weights_init
 from datetime import datetime
 import torch
 import torch.nn.functional as F
@@ -103,7 +103,8 @@ class Model1(nn.Module):
             ))            
         ])
         self.model = nn.Sequential(self.modelList)
-        
+        # self.model.apply(weights_init)
+
         # The output of feature_extractor will be [batch_size, num_filters, 16, 16]
         self.num_output_features = 32*32*32
         # Initialize our last fully connected layer
@@ -176,7 +177,8 @@ if __name__ == "__main__":
     print(f'Final validation accuracy {final_val_acc}')
     print(f'Final train accuracy {final_train_acc}')
     print(f'Final test accuracy {final_test_acc}')
-    
+    print(f'Final train loss {final_train_loss}')
+
     plotName = "task3_model1_" + datetime.now().strftime("%a_%H_%M")
     header = "Task 3, Model 1"
 

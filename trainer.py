@@ -5,7 +5,12 @@ import time
 import collections
 import utils
 import pathlib
+from torch import nn
 
+def weights_init(m): # litt usikker på den her..
+    if isinstance(m, nn.Conv2d):
+        torch.nn.init.xavier_uniform_(m.weight)
+        torch.nn.init.zeros_(m.bias)
 
 def compute_loss_and_accuracy(
         dataloader: torch.utils.data.DataLoader,
