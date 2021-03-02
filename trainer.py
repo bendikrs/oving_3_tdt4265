@@ -72,9 +72,19 @@ class Trainer:
         self.model = utils.to_cuda(self.model)
         print(self.model)
 
+         # ___________OPTIMIZERS_______________
         # Define our optimizer. SGD = Stochastich Gradient Descent
-        self.optimizer = torch.optim.SGD(self.model.parameters(),
-                                         self.learning_rate)
+        #self.optimizer = torch.optim.SGD(self.model.parameters(),
+        #                                 self.learning_rate)
+        
+        #Try with Adadelta optimizer:
+        # self.optimizer = torch.optim.Adadelta(self.model.parameters())
+        
+        # Averaged SGD:
+        self.optimizer = torch.optim.ASGD(self.model.parameters(),
+                                          self.learning_rate, weight_decay=0.001)
+        #______________________________________
+        
 
         # Load our dataset
         self.dataloader_train, self.dataloader_val, self.dataloader_test = dataloaders
