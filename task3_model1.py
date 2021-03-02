@@ -9,7 +9,7 @@ from trainer import Trainer, compute_loss_and_accuracy
 from datetime import datetime
 import torch
 import torch.nn.functional as F
-# from torchsummary import summary
+from torchsummary import summary
 
 class Model1(nn.Module):
     
@@ -45,36 +45,43 @@ class Model1(nn.Module):
                 out_channels=32, 
                 kernel_size=3, stride=1, padding=1
             )),
+            #('batchNorm1', nn.BatchNorm2d(32)),
             ('relu1', nn.ReLU()),
             ('maxPool1', nn.MaxPool2d(
                 kernel_size=2,
                 stride=2
             )),
+            #('dropout1', nn.Dropout2d(0.1)),
             ('conv2', nn.Conv2d(
                 in_channels=32, 
                 out_channels=64, 
                 kernel_size=5, stride=1, padding=2
             )),
-            # ('batchNorm1', nn.BatchNorm2d(64)),
+            #('batchNorm2', nn.BatchNorm2d(64)),
             ('relu2', nn.ReLU()),
             ('avgPool1', nn.AvgPool2d(
                 kernel_size=2
             )),
+            #('dropout2', nn.Dropout2d(0.1)),
             ('conv3', nn.Conv2d(
                 in_channels=64, 
                 out_channels=128, 
                 kernel_size=3, stride=1, padding=1
             )),
-            ('batchNorm1', nn.BatchNorm2d(128)),
+            ('batchNorm3', nn.BatchNorm2d(128)),
+            #('relu3', nn.ReLU()),
             ('maxPool3', nn.MaxPool2d(
                 kernel_size=2,
                 stride=2
             )),
+            #('dropout3', nn.Dropout2d(0.1)),
             ('conv4', nn.Conv2d(
                 in_channels=128, 
                 out_channels=256, 
                 kernel_size=5, stride=1, padding=2
             )),
+            #('batchNorm4', nn.BatchNorm2d(256)),
+            #('dropout4', nn.Dropout2d(0.1)),
             ('relu4', nn.ReLU()),
             ('flattern', nn.Flatten(start_dim=1 # kanskje?
             )),
@@ -82,11 +89,13 @@ class Model1(nn.Module):
                 in_features=256*4*4,
                 out_features=128
             )),
+            #('dropout5', nn.Dropout2d(0.2)),
             ('relu5', nn.ReLU()),
              ('fc2', nn.Linear(
                 in_features=128,
                 out_features=64
             )),
+            #('dropout6', nn.Dropout2d(0.2)),
             ('relu6', nn.ReLU()),
             ('out', nn.Linear(
                 in_features=64,
@@ -163,6 +172,7 @@ if __name__ == "__main__":
     final_val_acc = list(trainer.validation_history["accuracy"].values())[-1]
     final_test_acc = list(trainer.test_history["accuracy"].values())[-1]
     final_train_acc = list(trainer.train_history["accuracy"].values())[-1]
+    final_train_loss = list(trainer.train_history["loss"].values())[-1]
     print(f'Final validation accuracy {final_val_acc}')
     print(f'Final train accuracy {final_train_acc}')
     print(f'Final test accuracy {final_test_acc}')
@@ -170,12 +180,14 @@ if __name__ == "__main__":
     plotName = "task3_model1_" + datetime.now().strftime("%a_%H_%M")
     header = "Task 3, Model 1"
 
+    summary(trainer.model, (3,32,32))
     f = open(pathlib.Path("plots").joinpath("plotlogs.txt"), "a")
     f.write("\n--------------------------------------------------------------------" + \
         plotName + "\n" + \
         f'Final validation accuracy {final_val_acc}\n' + \
         f'Final train accuracy {final_train_acc}\n' + \
         f'Final test accuracy {final_test_acc}\n' +\
+        f'Final train loss {final_train_loss}\n' + \
         f'Batch size: {batch_size}, Learning rate: {learning_rate}\n' +\
         f'Optimizer: {Optimizer} \n' +\
         str(model) + \

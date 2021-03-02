@@ -8,7 +8,7 @@ from dataloaders import load_cifar10
 from trainer import Trainer, compute_loss_and_accuracy
 from datetime import datetime
 import torch
-#from torchsummary import summary
+from torchsummary import summary
 
 class Model2(nn.Module):
 
@@ -68,7 +68,7 @@ class Model2(nn.Module):
                 kernel_size=5, stride=1, padding=2
             )),
             ('relu4', nn.ReLU()),
-            ('flattern', nn.Flatten(start_dim=1 # kanskje?
+            ('flattern', nn.Flatten(start_dim=1
             )),
             ('fc1', nn.Linear(
                 in_features=256*4*4,
@@ -151,6 +151,8 @@ if __name__ == "__main__":
     
     plotName = "task3_model2_" + datetime.now().strftime("%a_%H_%M")
     header = "Task 3, Model 2"
+    
+    summary(trainer.model, (3,32,32))
 
     f = open(pathlib.Path("plots").joinpath("plotlogs.txt"), "a")
     f.write("\n--------------------------------------------------------------------" + \
