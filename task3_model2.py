@@ -153,8 +153,8 @@ if __name__ == "__main__":
     print(f'Final test accuracy {final_test_acc}')
     print(f'Final train loss {final_train_loss}')
 
-    plotName = "task3_model1_" + datetime.now().strftime("%a_%H_%M")
-    header = "Task 3, Model 1"
+    plotName = "task3_model2_" + datetime.now().strftime("%a_%H_%M")
+    header = "Task 3, Model 2"
 
     summary(trainer.model, (3,32,32))
     f = open(pathlib.Path("plots").joinpath("plotlogs.txt"), "a")

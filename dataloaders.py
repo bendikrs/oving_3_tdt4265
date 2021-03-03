@@ -44,6 +44,19 @@ def load_cifar10(batch_size: int, validation_fraction: float = 0.1, task = "2"
             transforms.ToTensor(),
             transforms.Normalize(mean, std)
         ])
+    elif task == "4a_model": # The transforms for task 4a model
+        transform_train = transforms.Compose([
+            transforms.ToTensor(),
+            transforms.Resize(224), # Resize images
+            transforms.Normalize(mean=[0.485, 0.456, 0.406],
+                                 std=[0.229, 0.224, 0.225])
+        ])
+        transform_test = transforms.Compose([
+            transforms.ToTensor(),
+            transforms.Resize(224), # Resize images
+            transforms.Normalize(mean=[0.485, 0.456, 0.406],
+                                 std=[0.229, 0.224, 0.225])
+        ])
 
     data_train = datasets.CIFAR10('data/cifar10',
                                   train=True,

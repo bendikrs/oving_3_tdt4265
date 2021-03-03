@@ -86,8 +86,12 @@ class Trainer:
         # self.optimizer = torch.optim.Adadelta(self.model.parameters())
         
         # Averaged SGD:
-        self.optimizer = torch.optim.ASGD(self.model.parameters(),
-                                          self.learning_rate, weight_decay=0.001)
+        # self.optimizer = torch.optim.ASGD(self.model.parameters(),
+        #                                   self.learning_rate, weight_decay=0.001)
+
+        # Adam:
+        self.optimizer = torch.optim.Adam(self.model.parameters(),
+                                          self.learning_rate)
         #______________________________________
         
 
