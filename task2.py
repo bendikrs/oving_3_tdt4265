@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 from collections import OrderedDict
 import pathlib
 import matplotlib.pyplot as plt
@@ -20,7 +21,7 @@ class ExampleModel(nn.Module):
         """
         super(ExampleModel, self).__init__() # usikker på om exampleModel og self egentlig skal inn her
         # TODO: Implement this function (Task  2a)
-        num_filters = 32  # Set number of filters in first conv layer
+        num_filters = 64  # Set number of filters in first conv layer
         self.num_classes = num_classes
         # Define the convolutional layers
 
@@ -137,3 +138,5 @@ if __name__ == "__main__":
     final_train_acc = list(trainer.train_history["accuracy"].values())[-1]
     print(f'Final validation accuracy {final_val_acc}\nFinal train accuracy {final_train_acc}\nFinal test accuracy {final_test_acc}\n')
     create_plots(trainer, "task2")
+
+

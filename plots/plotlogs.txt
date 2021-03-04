@@ -114,3 +114,2251 @@ Model1(
 --------------------------------------------------------------------
 
 
+
+--------------------------------------------------------------------task3_model2_Thu_19_53
+Final validation accuracy 0.6818000078201294
+Final train accuracy 0.7611131072044373
+Final test accuracy 0.6797999739646912
+Model2(
+  (model): Sequential(
+    (conv1): Conv2d(3, 32, kernel_size=(5, 5), stride=(1, 1), padding=(2, 2))
+    (relu1): ReLU()
+    (maxPool1): MaxPool2d(kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=False)
+    (conv2): Conv2d(32, 64, kernel_size=(5, 5), stride=(1, 1), padding=(2, 2))
+    (relu2): ReLU()
+    (maxPool2): MaxPool2d(kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=False)
+    (conv3): Conv2d(64, 128, kernel_size=(5, 5), stride=(1, 1), padding=(2, 2))
+    (relu3): ReLU()
+    (maxPool3): MaxPool2d(kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=False)
+    (flattern): Flatten(start_dim=1, end_dim=-1)
+    (fc1): Linear(in_features=2048, out_features=64, bias=True)
+    (relu4): ReLU()
+    (out): Linear(in_features=64, out_features=10, bias=True)
+  )
+)
+--------------------------------------------------------------------
+
+
+
+--------------------------------------------------------------------task3_model1_Thu_19_57
+Final validation accuracy 0.724399983882904
+Final train accuracy 0.9161183834075928
+Final test accuracy 0.7145999670028687
+Model1(
+  (model): Sequential(
+    (conv1): Conv2d(3, 32, kernel_size=(5, 5), stride=(1, 1), padding=(2, 2))
+    (relu1): ReLU()
+    (maxPool1): MaxPool2d(kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=False)
+    (conv2): Conv2d(32, 64, kernel_size=(5, 5), stride=(1, 1), padding=(2, 2))
+    (relu2): ReLU()
+    (maxPool2): MaxPool2d(kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=False)
+    (conv3): Conv2d(64, 128, kernel_size=(5, 5), stride=(1, 1), padding=(2, 2))
+    (relu3): ReLU()
+    (maxPool3): MaxPool2d(kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=False)
+    (flattern): Flatten(start_dim=1, end_dim=-1)
+    (fc1): Linear(in_features=2048, out_features=64, bias=True)
+    (relu4): ReLU()
+    (out): Linear(in_features=64, out_features=10, bias=True)
+  )
+)
+--------------------------------------------------------------------
+
+
+
+--------------------------------------------------------------------task3_model1_Thu_20_03
+Final validation accuracy 0.6929999589920044
+Final train accuracy 0.8195679187774658
+Final test accuracy 0.6955999732017517
+Model1(
+  (model): Sequential(
+    (conv1): Conv2d(3, 32, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+    (relu1): ReLU()
+    (maxPool1): MaxPool2d(kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=False)
+    (conv2): Conv2d(32, 64, kernel_size=(5, 5), stride=(1, 1), padding=(2, 2))
+    (relu2): ReLU()
+    (maxPool2): MaxPool2d(kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=False)
+    (conv3): Conv2d(64, 128, kernel_size=(5, 5), stride=(1, 1), padding=(2, 2))
+    (relu3): ReLU()
+    (maxPool3): MaxPool2d(kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=False)
+    (flattern): Flatten(start_dim=1, end_dim=-1)
+    (fc1): Linear(in_features=2048, out_features=64, bias=True)
+    (relu4): ReLU()
+    (out): Linear(in_features=64, out_features=10, bias=True)
+  )
+)
+--------------------------------------------------------------------
+
+
+
+--------------------------------------------------------------------task3_model1_Thu_20_06
+Final validation accuracy 0.7193999886512756
+Final train accuracy 0.8276137709617615
+Final test accuracy 0.7141000032424927
+Model1(
+  (model): Sequential(
+    (conv1): Conv2d(3, 32, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+    (relu1): ReLU()
+    (maxPool1): MaxPool2d(kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=False)
+    (conv2): Conv2d(32, 64, kernel_size=(5, 5), stride=(1, 1), padding=(2, 2))
+    (relu2): ReLU()
+    (maxPool2): MaxPool2d(kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=False)
+    (conv3): Conv2d(64, 128, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+    (relu3): ReLU()
+    (maxPool3): MaxPool2d(kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=False)
+    (flattern): Flatten(start_dim=1, end_dim=-1)
+    (fc1): Linear(in_features=2048, out_features=64, bias=True)
+    (relu4): ReLU()
+    (out): Linear(in_features=64, out_features=10, bias=True)
+  )
+)
+--------------------------------------------------------------------
+
+
+
+--------------------------------------------------------------------task3_model1_Thu_20_10
+Final validation accuracy 0.7033999562263489
+Final train accuracy 0.7869176864624023
+Final test accuracy 0.6839999556541443
+Model1(
+  (model): Sequential(
+    (conv1): Conv2d(3, 32, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+    (relu1): ReLU()
+    (maxPool1): MaxPool2d(kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=False)
+    (conv2): Conv2d(32, 64, kernel_size=(5, 5), stride=(1, 1), padding=(2, 2))
+    (relu2): ReLU()
+    (maxPool2): MaxPool2d(kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=False)
+    (conv3): Conv2d(64, 128, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+    (relu3): ReLU()
+    (maxPool3): MaxPool2d(kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=False)
+    (flattern): Flatten(start_dim=1, end_dim=-1)
+    (fc1): Linear(in_features=2048, out_features=64, bias=True)
+    (relu4): ReLU()
+    (out): Linear(in_features=64, out_features=10, bias=True)
+  )
+)
+--------------------------------------------------------------------
+
+
+
+--------------------------------------------------------------------task3_model1_Thu_22_46
+Final validation accuracy 0.7319999933242798
+Final train accuracy 0.8488693237304688
+Final test accuracy 0.7375999689102173
+Model1(
+  (model): Sequential(
+    (conv1): Conv2d(3, 32, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+    (relu1): ReLU()
+    (maxPool1): MaxPool2d(kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=False)
+    (conv2): Conv2d(32, 64, kernel_size=(5, 5), stride=(1, 1), padding=(2, 2))
+    (relu2): ReLU()
+    (maxPool2): MaxPool2d(kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=False)
+    (conv3): Conv2d(64, 128, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+    (relu3): ReLU()
+    (maxPool3): MaxPool2d(kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=False)
+    (flattern): Flatten(start_dim=1, end_dim=-1)
+    (fc1): Linear(in_features=2048, out_features=64, bias=True)
+    (relu4): ReLU()
+    (out): Linear(in_features=64, out_features=10, bias=True)
+  )
+)
+--------------------------------------------------------------------
+
+
+
+--------------------------------------------------------------------task3_model1_Thu_22_53
+Final validation accuracy 0.7319999933242798
+Final train accuracy 0.8488693237304688
+Final test accuracy 0.7375999689102173
+Model1(
+  (model): Sequential(
+    (conv1): Conv2d(3, 32, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+    (relu1): ReLU()
+    (maxPool1): MaxPool2d(kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=False)
+    (conv2): Conv2d(32, 64, kernel_size=(5, 5), stride=(1, 1), padding=(2, 2))
+    (relu2): ReLU()
+    (maxPool2): MaxPool2d(kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=False)
+    (conv3): Conv2d(64, 128, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+    (relu3): ReLU()
+    (maxPool3): MaxPool2d(kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=False)
+    (flattern): Flatten(start_dim=1, end_dim=-1)
+    (fc1): Linear(in_features=2048, out_features=64, bias=True)
+    (relu4): ReLU()
+    (out): Linear(in_features=64, out_features=10, bias=True)
+  )
+)
+--------------------------------------------------------------------
+
+
+
+--------------------------------------------------------------------task3_model1_Thu_23_03
+Final validation accuracy 0.7033999562263489
+Final train accuracy 0.7869176864624023
+Final test accuracy 0.6839999556541443
+Model1(
+  (model): Sequential(
+    (conv1): Conv2d(3, 32, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+    (relu1): ReLU()
+    (maxPool1): MaxPool2d(kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=False)
+    (conv2): Conv2d(32, 64, kernel_size=(5, 5), stride=(1, 1), padding=(2, 2))
+    (relu2): ReLU()
+    (maxPool2): MaxPool2d(kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=False)
+    (conv3): Conv2d(64, 128, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+    (relu3): ReLU()
+    (maxPool3): MaxPool2d(kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=False)
+    (flattern): Flatten(start_dim=1, end_dim=-1)
+    (fc1): Linear(in_features=2048, out_features=64, bias=True)
+    (relu4): ReLU()
+    (out): Linear(in_features=64, out_features=10, bias=True)
+  )
+)
+--------------------------------------------------------------------
+
+
+
+--------------------------------------------------------------------task3_model1_Thu_23_05
+Final validation accuracy 0.6855999827384949
+Final train accuracy 0.7368901371955872
+Final test accuracy 0.6771000027656555
+Model1(
+  (model): Sequential(
+    (conv1): Conv2d(3, 32, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+    (relu1): ReLU()
+    (maxPool1): MaxPool2d(kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=False)
+    (conv2): Conv2d(32, 64, kernel_size=(3, 3), stride=(1, 1), padding=(2, 2))
+    (relu2): ReLU()
+    (maxPool2): MaxPool2d(kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=False)
+    (conv3): Conv2d(64, 128, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+    (relu3): ReLU()
+    (maxPool3): MaxPool2d(kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=False)
+    (flattern): Flatten(start_dim=1, end_dim=-1)
+    (fc1): Linear(in_features=2048, out_features=64, bias=True)
+    (relu4): ReLU()
+    (out): Linear(in_features=64, out_features=10, bias=True)
+  )
+)
+--------------------------------------------------------------------
+
+
+
+--------------------------------------------------------------------task3_model1_Thu_23_07
+Final validation accuracy 0.6929999589920044
+Final train accuracy 0.753895103931427
+Final test accuracy 0.6796000003814697
+Model1(
+  (model): Sequential(
+    (conv1): Conv2d(3, 32, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+    (relu1): ReLU()
+    (maxPool1): MaxPool2d(kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=False)
+    (conv2): Conv2d(32, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+    (relu2): ReLU()
+    (maxPool2): MaxPool2d(kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=False)
+    (conv3): Conv2d(64, 128, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+    (relu3): ReLU()
+    (maxPool3): MaxPool2d(kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=False)
+    (flattern): Flatten(start_dim=1, end_dim=-1)
+    (fc1): Linear(in_features=2048, out_features=64, bias=True)
+    (relu4): ReLU()
+    (out): Linear(in_features=64, out_features=10, bias=True)
+  )
+)
+--------------------------------------------------------------------
+
+
+
+--------------------------------------------------------------------task3_model1_Thu_23_09
+Final validation accuracy 0.6801999807357788
+Final train accuracy 0.7788016200065613
+Final test accuracy 0.6809999942779541
+Model1(
+  (model): Sequential(
+    (conv1): Conv2d(3, 32, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+    (relu1): ReLU()
+    (maxPool1): MaxPool2d(kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=False)
+    (conv2): Conv2d(32, 64, kernel_size=(5, 5), stride=(1, 1), padding=(2, 2))
+    (relu2): ReLU()
+    (maxPool2): MaxPool2d(kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=False)
+    (conv3): Conv2d(64, 128, kernel_size=(7, 7), stride=(1, 1), padding=(3, 3))
+    (relu3): ReLU()
+    (maxPool3): MaxPool2d(kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=False)
+    (flattern): Flatten(start_dim=1, end_dim=-1)
+    (fc1): Linear(in_features=2048, out_features=64, bias=True)
+    (relu4): ReLU()
+    (out): Linear(in_features=64, out_features=10, bias=True)
+  )
+)
+--------------------------------------------------------------------
+
+
+
+--------------------------------------------------------------------task3_model1_Thu_23_12
+Final validation accuracy 0.7303999662399292
+Final train accuracy 0.8425925970077515
+Final test accuracy 0.7215999960899353
+Model1(
+  (model): Sequential(
+    (conv1): Conv2d(3, 32, kernel_size=(2, 2), stride=(1, 1), padding=(1, 1))
+    (relu1): ReLU()
+    (maxPool1): MaxPool2d(kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=False)
+    (conv2): Conv2d(32, 64, kernel_size=(5, 5), stride=(1, 1), padding=(2, 2))
+    (relu2): ReLU()
+    (maxPool2): MaxPool2d(kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=False)
+    (conv3): Conv2d(64, 128, kernel_size=(5, 5), stride=(1, 1), padding=(2, 2))
+    (relu3): ReLU()
+    (maxPool3): MaxPool2d(kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=False)
+    (flattern): Flatten(start_dim=1, end_dim=-1)
+    (fc1): Linear(in_features=2048, out_features=64, bias=True)
+    (relu4): ReLU()
+    (out): Linear(in_features=64, out_features=10, bias=True)
+  )
+)
+--------------------------------------------------------------------
+
+
+
+--------------------------------------------------------------------task3_model1_Fri_13_25
+Final validation accuracy 0.7247999906539917
+Final train accuracy 0.8265892267227173
+Final test accuracy 0.7249000072479248
+Model1(
+  (model): Sequential(
+    (conv1): Conv2d(3, 32, kernel_size=(2, 2), stride=(1, 1), padding=(1, 1))
+    (relu1): ReLU()
+    (maxPool1): MaxPool2d(kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=False)
+    (conv2): Conv2d(32, 64, kernel_size=(5, 5), stride=(1, 1), padding=(2, 2))
+    (relu2): ReLU()
+    (maxPool2): MaxPool2d(kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=False)
+    (conv3): Conv2d(64, 128, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+    (relu3): ReLU()
+    (maxPool3): MaxPool2d(kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=False)
+    (conv4): Conv2d(128, 128, kernel_size=(5, 5), stride=(1, 1), padding=(2, 2))
+    (flattern): Flatten(start_dim=1, end_dim=-1)
+    (fc1): Linear(in_features=2048, out_features=64, bias=True)
+    (relu4): ReLU()
+    (out): Linear(in_features=64, out_features=10, bias=True)
+  )
+)
+--------------------------------------------------------------------
+
+
+
+--------------------------------------------------------------------task3_model1_Fri_13_29
+Final validation accuracy 0.7364000082015991
+Final train accuracy 0.8507512211799622
+Final test accuracy 0.727400004863739
+Model1(
+  (model): Sequential(
+    (conv1): Conv2d(3, 32, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+    (relu1): ReLU()
+    (maxPool1): MaxPool2d(kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=False)
+    (conv2): Conv2d(32, 64, kernel_size=(5, 5), stride=(1, 1), padding=(2, 2))
+    (relu2): ReLU()
+    (maxPool2): MaxPool2d(kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=False)
+    (conv3): Conv2d(64, 128, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+    (relu3): ReLU()
+    (maxPool3): MaxPool2d(kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=False)
+    (conv4): Conv2d(128, 128, kernel_size=(5, 5), stride=(1, 1), padding=(2, 2))
+    (flattern): Flatten(start_dim=1, end_dim=-1)
+    (fc1): Linear(in_features=2048, out_features=64, bias=True)
+    (relu4): ReLU()
+    (out): Linear(in_features=64, out_features=10, bias=True)
+  )
+)
+--------------------------------------------------------------------
+
+
+
+--------------------------------------------------------------------task3_model1_Fri_13_32
+Final validation accuracy 0.6990000009536743
+Final train accuracy 0.7954080700874329
+Final test accuracy 0.6976000070571899
+Model1(
+  (model): Sequential(
+    (conv1): Conv2d(3, 32, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+    (relu1): ReLU()
+    (maxPool1): MaxPool2d(kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=False)
+    (conv2): Conv2d(32, 64, kernel_size=(5, 5), stride=(1, 1), padding=(2, 2))
+    (relu2): ReLU()
+    (maxPool2): MaxPool2d(kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=False)
+    (conv3): Conv2d(64, 128, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+    (relu3): ReLU()
+    (maxPool3): MaxPool2d(kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=False)
+    (conv4): Conv2d(128, 128, kernel_size=(5, 5), stride=(1, 1), padding=(2, 2))
+    (flattern): Flatten(start_dim=1, end_dim=-1)
+    (fc1): Linear(in_features=2048, out_features=64, bias=True)
+    (relu4): ReLU()
+    (out): Linear(in_features=64, out_features=10, bias=True)
+  )
+)
+--------------------------------------------------------------------
+
+
+
+--------------------------------------------------------------------task3_model1_Fri_13_47
+Final validation accuracy 0.4115999937057495
+Final train accuracy 0.42004984617233276
+Final test accuracy 0.4169999957084656
+Batch size: 128, Learning rate: 0.15
+Model1(
+  (model): Sequential(
+    (conv1): Conv2d(3, 32, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+    (relu1): ReLU()
+    (maxPool1): MaxPool2d(kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=False)
+    (conv2): Conv2d(32, 64, kernel_size=(5, 5), stride=(1, 1), padding=(2, 2))
+    (relu2): ReLU()
+    (maxPool2): MaxPool2d(kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=False)
+    (conv3): Conv2d(64, 128, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+    (relu3): ReLU()
+    (maxPool3): MaxPool2d(kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=False)
+    (conv4): Conv2d(128, 128, kernel_size=(5, 5), stride=(1, 1), padding=(2, 2))
+    (flattern): Flatten(start_dim=1, end_dim=-1)
+    (fc1): Linear(in_features=2048, out_features=64, bias=True)
+    (relu4): ReLU()
+    (out): Linear(in_features=64, out_features=10, bias=True)
+  )
+)
+--------------------------------------------------------------------
+
+
+
+--------------------------------------------------------------------task3_model1_Fri_13_53
+Final validation accuracy 0.7471999526023865
+Final train accuracy 0.9248977303504944
+Final test accuracy 0.7392999529838562
+Batch size: 64, Learning rate: 0.1
+Model1(
+  (model): Sequential(
+    (conv1): Conv2d(3, 32, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+    (relu1): ReLU()
+    (maxPool1): MaxPool2d(kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=False)
+    (conv2): Conv2d(32, 64, kernel_size=(5, 5), stride=(1, 1), padding=(2, 2))
+    (relu2): ReLU()
+    (maxPool2): MaxPool2d(kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=False)
+    (conv3): Conv2d(64, 128, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+    (relu3): ReLU()
+    (maxPool3): MaxPool2d(kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=False)
+    (conv4): Conv2d(128, 128, kernel_size=(5, 5), stride=(1, 1), padding=(2, 2))
+    (relu4): ReLU()
+    (flattern): Flatten(start_dim=1, end_dim=-1)
+    (fc1): Linear(in_features=2048, out_features=64, bias=True)
+    (out): Linear(in_features=64, out_features=10, bias=True)
+  )
+)
+--------------------------------------------------------------------
+
+
+
+--------------------------------------------------------------------task3_model1_Fri_13_59
+Final validation accuracy 0.6417999863624573
+Final train accuracy 0.6631845831871033
+Final test accuracy 0.6371999979019165
+Batch size: 64, Learning rate: 0.01
+Model1(
+  (model): Sequential(
+    (conv1): Conv2d(3, 32, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+    (relu1): ReLU()
+    (maxPool1): MaxPool2d(kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=False)
+    (conv2): Conv2d(32, 64, kernel_size=(5, 5), stride=(1, 1), padding=(2, 2))
+    (relu2): ReLU()
+    (maxPool2): MaxPool2d(kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=False)
+    (conv3): Conv2d(64, 128, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+    (relu3): ReLU()
+    (maxPool3): MaxPool2d(kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=False)
+    (conv4): Conv2d(128, 128, kernel_size=(5, 5), stride=(1, 1), padding=(2, 2))
+    (relu4): ReLU()
+    (flattern): Flatten(start_dim=1, end_dim=-1)
+    (fc1): Linear(in_features=2048, out_features=64, bias=True)
+    (out): Linear(in_features=64, out_features=10, bias=True)
+  )
+)
+--------------------------------------------------------------------
+
+
+
+--------------------------------------------------------------------task3_model1_Fri_14_01
+Final validation accuracy 0.7432000041007996
+Final train accuracy 0.8733108043670654
+Final test accuracy 0.7369999885559082
+Batch size: 64, Learning rate: 0.12
+Model1(
+  (model): Sequential(
+    (conv1): Conv2d(3, 32, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+    (relu1): ReLU()
+    (maxPool1): MaxPool2d(kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=False)
+    (conv2): Conv2d(32, 64, kernel_size=(5, 5), stride=(1, 1), padding=(2, 2))
+    (relu2): ReLU()
+    (maxPool2): MaxPool2d(kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=False)
+    (conv3): Conv2d(64, 128, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+    (relu3): ReLU()
+    (maxPool3): MaxPool2d(kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=False)
+    (conv4): Conv2d(128, 128, kernel_size=(5, 5), stride=(1, 1), padding=(2, 2))
+    (relu4): ReLU()
+    (flattern): Flatten(start_dim=1, end_dim=-1)
+    (fc1): Linear(in_features=2048, out_features=64, bias=True)
+    (out): Linear(in_features=64, out_features=10, bias=True)
+  )
+)
+--------------------------------------------------------------------
+
+
+
+--------------------------------------------------------------------task3_model1_Fri_14_08
+Final validation accuracy 0.727400004863739
+Final train accuracy 0.8526849150657654
+Final test accuracy 0.722599983215332
+Batch size: 64, Learning rate: 0.09
+Model1(
+  (model): Sequential(
+    (conv1): Conv2d(3, 32, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+    (relu1): ReLU()
+    (maxPool1): MaxPool2d(kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=False)
+    (conv2): Conv2d(32, 64, kernel_size=(5, 5), stride=(1, 1), padding=(2, 2))
+    (relu2): ReLU()
+    (maxPool2): MaxPool2d(kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=False)
+    (conv3): Conv2d(64, 128, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+    (relu3): ReLU()
+    (maxPool3): MaxPool2d(kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=False)
+    (conv4): Conv2d(128, 128, kernel_size=(5, 5), stride=(1, 1), padding=(2, 2))
+    (relu4): ReLU()
+    (flattern): Flatten(start_dim=1, end_dim=-1)
+    (fc1): Linear(in_features=2048, out_features=64, bias=True)
+    (out): Linear(in_features=64, out_features=10, bias=True)
+  )
+)
+--------------------------------------------------------------------
+
+
+
+--------------------------------------------------------------------task3_model1_Fri_14_10
+Final validation accuracy 0.7360000014305115
+Final train accuracy 0.8511396050453186
+Final test accuracy 0.7182999849319458
+Batch size: 128, Learning rate: 0.1
+Model1(
+  (model): Sequential(
+    (conv1): Conv2d(3, 32, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+    (relu1): ReLU()
+    (maxPool1): MaxPool2d(kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=False)
+    (conv2): Conv2d(32, 64, kernel_size=(5, 5), stride=(1, 1), padding=(2, 2))
+    (relu2): ReLU()
+    (maxPool2): MaxPool2d(kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=False)
+    (conv3): Conv2d(64, 128, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+    (relu3): ReLU()
+    (maxPool3): MaxPool2d(kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=False)
+    (conv4): Conv2d(128, 128, kernel_size=(5, 5), stride=(1, 1), padding=(2, 2))
+    (relu4): ReLU()
+    (flattern): Flatten(start_dim=1, end_dim=-1)
+    (fc1): Linear(in_features=2048, out_features=64, bias=True)
+    (out): Linear(in_features=64, out_features=10, bias=True)
+  )
+)
+--------------------------------------------------------------------
+
+
+
+--------------------------------------------------------------------task3_model1_Fri_14_44
+Final validation accuracy 0.7310000061988831
+Final train accuracy 0.8503066897392273
+Final test accuracy 0.7166000008583069
+Batch size: 64, Learning rate: 0.1
+Model1(
+  (model): Sequential(
+    (conv1): Conv2d(3, 32, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+    (relu1): ReLU()
+    (maxPool1): MaxPool2d(kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=False)
+    (conv2): Conv2d(32, 64, kernel_size=(5, 5), stride=(1, 1), padding=(2, 2))
+    (relu2): ReLU()
+    (maxPool2): MaxPool2d(kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=False)
+    (conv3): Conv2d(64, 128, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+    (relu3): ReLU()
+    (maxPool3): MaxPool2d(kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=False)
+    (conv4): Conv2d(128, 128, kernel_size=(5, 5), stride=(1, 1), padding=(2, 2))
+    (relu4): ReLU()
+    (flattern): Flatten(start_dim=1, end_dim=-1)
+    (fc1): Linear(in_features=2048, out_features=64, bias=True)
+    (out): Linear(in_features=64, out_features=10, bias=True)
+  )
+)
+--------------------------------------------------------------------
+
+
+
+--------------------------------------------------------------------task3_model1_Fri_14_51
+Final validation accuracy 0.7310000061988831
+Final train accuracy 0.8503066897392273
+Final test accuracy 0.7166000008583069
+Batch size: 64, Learning rate: 0.1
+Model1(
+  (model): Sequential(
+    (conv1): Conv2d(3, 32, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+    (relu1): ReLU()
+    (maxPool1): MaxPool2d(kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=False)
+    (conv2): Conv2d(32, 64, kernel_size=(5, 5), stride=(1, 1), padding=(2, 2))
+    (relu2): ReLU()
+    (maxPool2): MaxPool2d(kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=False)
+    (conv3): Conv2d(64, 128, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+    (relu3): ReLU()
+    (maxPool3): MaxPool2d(kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=False)
+    (conv4): Conv2d(128, 128, kernel_size=(5, 5), stride=(1, 1), padding=(2, 2))
+    (relu4): ReLU()
+    (flattern): Flatten(start_dim=1, end_dim=-1)
+    (fc1): Linear(in_features=2048, out_features=64, bias=True)
+    (out): Linear(in_features=64, out_features=10, bias=True)
+  )
+)
+--------------------------------------------------------------------
+
+
+
+--------------------------------------------------------------------task3_model1_Mon_02_52
+Final validation accuracy 0.7305999994277954
+Final train accuracy 0.8834459185600281
+Final test accuracy 0.7297999858856201
+Batch size: 64, Learning rate: 0.1
+Model1(
+  (model): Sequential(
+    (conv1): Conv2d(3, 32, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+    (relu1): ReLU()
+    (maxPool1): MaxPool2d(kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=False)
+    (conv2): Conv2d(32, 64, kernel_size=(5, 5), stride=(1, 1), padding=(2, 2))
+    (relu2): ReLU()
+    (avgPool1): AdaptiveAvgPool2d(output_size=8)
+    (conv3): Conv2d(64, 128, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+    (relu3): ReLU()
+    (maxPool3): MaxPool2d(kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=False)
+    (conv4): Conv2d(128, 128, kernel_size=(5, 5), stride=(1, 1), padding=(2, 2))
+    (relu4): ReLU()
+    (flattern): Flatten(start_dim=1, end_dim=-1)
+    (fc1): Linear(in_features=2048, out_features=64, bias=True)
+    (out): Linear(in_features=64, out_features=10, bias=True)
+  )
+)
+--------------------------------------------------------------------
+
+
+
+--------------------------------------------------------------------task3_model1_Mon_03_01
+Final validation accuracy 0.7305999994277954
+Final train accuracy 0.8834459185600281
+Final test accuracy 0.7297999858856201
+Batch size: 64, Learning rate: 0.1
+Model1(
+  (model): Sequential(
+    (conv1): Conv2d(3, 32, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+    (relu1): ReLU()
+    (maxPool1): MaxPool2d(kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=False)
+    (conv2): Conv2d(32, 64, kernel_size=(5, 5), stride=(1, 1), padding=(2, 2))
+    (relu2): ReLU()
+    (avgPool1): AdaptiveAvgPool2d(output_size=8)
+    (conv3): Conv2d(64, 128, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+    (relu3): ReLU()
+    (maxPool3): MaxPool2d(kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=False)
+    (conv4): Conv2d(128, 128, kernel_size=(5, 5), stride=(1, 1), padding=(2, 2))
+    (relu4): ReLU()
+    (flattern): Flatten(start_dim=1, end_dim=-1)
+    (fc1): Linear(in_features=2048, out_features=64, bias=True)
+    (out): Linear(in_features=64, out_features=10, bias=True)
+  )
+)
+--------------------------------------------------------------------
+
+
+
+--------------------------------------------------------------------task3_model1_Mon_17_34
+Final validation accuracy 0.7305999994277954
+Final train accuracy 0.8834459185600281
+Final test accuracy 0.7297999858856201
+Batch size: 64, Learning rate: 0.1
+Model1(
+  (model): Sequential(
+    (conv1): Conv2d(3, 32, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+    (relu1): ReLU()
+    (maxPool1): MaxPool2d(kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=False)
+    (conv2): Conv2d(32, 64, kernel_size=(5, 5), stride=(1, 1), padding=(2, 2))
+    (relu2): ReLU()
+    (avgPool1): AdaptiveAvgPool2d(output_size=8)
+    (conv3): Conv2d(64, 128, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+    (relu3): ReLU()
+    (maxPool2): MaxPool2d(kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=False)
+    (conv4): Conv2d(128, 128, kernel_size=(5, 5), stride=(1, 1), padding=(2, 2))
+    (relu4): ReLU()
+    (flattern): Flatten(start_dim=1, end_dim=-1)
+    (fc1): Linear(in_features=2048, out_features=64, bias=True)
+    (out): Linear(in_features=64, out_features=10, bias=True)
+  )
+)
+--------------------------------------------------------------------
+
+
+
+--------------------------------------------------------------------task3_model1_Mon_17_45
+Final validation accuracy 0.7310000061988831
+Final train accuracy 0.8503066897392273
+Final test accuracy 0.7166000008583069
+Batch size: 64, Learning rate: 0.1
+Model1(
+  (model): Sequential(
+    (conv1): Conv2d(3, 32, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+    (relu1): ReLU()
+    (maxPool1): MaxPool2d(kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=False)
+    (conv2): Conv2d(32, 64, kernel_size=(5, 5), stride=(1, 1), padding=(2, 2))
+    (relu2): ReLU()
+    (maxPool2): MaxPool2d(kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=False)
+    (conv3): Conv2d(64, 128, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+    (relu3): ReLU()
+    (maxPool3): MaxPool2d(kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=False)
+    (conv4): Conv2d(128, 128, kernel_size=(5, 5), stride=(1, 1), padding=(2, 2))
+    (relu4): ReLU()
+    (flattern): Flatten(start_dim=1, end_dim=-1)
+    (fc1): Linear(in_features=2048, out_features=64, bias=True)
+    (out): Linear(in_features=64, out_features=10, bias=True)
+  )
+)
+--------------------------------------------------------------------
+
+
+
+--------------------------------------------------------------------task3_model1_Mon_17_56
+Final validation accuracy 0.7305999994277954
+Final train accuracy 0.8834459185600281
+Final test accuracy 0.7297999858856201
+Batch size: 64, Learning rate: 0.1
+Model1(
+  (model): Sequential(
+    (conv1): Conv2d(3, 32, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+    (relu1): ReLU()
+    (maxPool1): MaxPool2d(kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=False)
+    (conv2): Conv2d(32, 64, kernel_size=(5, 5), stride=(1, 1), padding=(2, 2))
+    (relu2): ReLU()
+    (avgPool1): AvgPool2d(kernel_size=2, stride=2, padding=0)
+    (conv3): Conv2d(64, 128, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+    (relu3): ReLU()
+    (maxPool3): MaxPool2d(kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=False)
+    (conv4): Conv2d(128, 128, kernel_size=(5, 5), stride=(1, 1), padding=(2, 2))
+    (relu4): ReLU()
+    (flattern): Flatten(start_dim=1, end_dim=-1)
+    (fc1): Linear(in_features=2048, out_features=64, bias=True)
+    (out): Linear(in_features=64, out_features=10, bias=True)
+  )
+)
+--------------------------------------------------------------------
+
+
+
+--------------------------------------------------------------------task3_model1_Mon_18_01
+Final validation accuracy 0.7305999994277954
+Final train accuracy 0.8834459185600281
+Final test accuracy 0.7297999858856201
+Batch size: 64, Learning rate: 0.1
+Model1(
+  (model): Sequential(
+    (conv1): Conv2d(3, 32, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+    (relu1): ReLU()
+    (maxPool1): MaxPool2d(kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=False)
+    (conv2): Conv2d(32, 64, kernel_size=(5, 5), stride=(1, 1), padding=(2, 2))
+    (relu2): ReLU()
+    (avgPool1): AvgPool2d(kernel_size=2, stride=2, padding=0)
+    (conv3): Conv2d(64, 128, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+    (relu3): ReLU()
+    (maxPool3): MaxPool2d(kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=False)
+    (conv4): Conv2d(128, 128, kernel_size=(5, 5), stride=(1, 1), padding=(2, 2))
+    (relu4): ReLU()
+    (flattern): Flatten(start_dim=1, end_dim=-1)
+    (fc1): Linear(in_features=2048, out_features=64, bias=True)
+    (out): Linear(in_features=64, out_features=10, bias=True)
+  )
+)
+--------------------------------------------------------------------
+
+
+
+--------------------------------------------------------------------task3_model1_Mon_18_22
+Final validation accuracy 0.7305999994277954
+Final train accuracy 0.8834459185600281
+Final test accuracy 0.7297999858856201
+Batch size: 64, Learning rate: 0.1
+Model1(
+  (model): Sequential(
+    (conv1): Conv2d(3, 32, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+    (relu1): ReLU()
+    (maxPool1): MaxPool2d(kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=False)
+    (conv2): Conv2d(32, 64, kernel_size=(5, 5), stride=(1, 1), padding=(2, 2))
+    (relu2): ReLU()
+    (avgPool1): AvgPool2d(kernel_size=2, stride=2, padding=0)
+    (conv3): Conv2d(64, 128, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+    (relu3): ReLU()
+    (maxPool3): MaxPool2d(kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=False)
+    (conv4): Conv2d(128, 128, kernel_size=(5, 5), stride=(1, 1), padding=(2, 2))
+    (relu4): ReLU()
+    (flattern): Flatten(start_dim=1, end_dim=-1)
+    (fc1): Linear(in_features=2048, out_features=64, bias=True)
+    (out): Linear(in_features=64, out_features=10, bias=True)
+  )
+)
+--------------------------------------------------------------------
+
+
+
+--------------------------------------------------------------------task3_model1_Mon_18_25
+Final validation accuracy 0.7305999994277954
+Final train accuracy 0.8834459185600281
+Final test accuracy 0.7297999858856201
+Batch size: 64, Learning rate: 0.1
+Model1(
+  (model): Sequential(
+    (conv1): Conv2d(3, 32, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+    (relu1): ReLU()
+    (maxPool1): MaxPool2d(kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=False)
+    (conv2): Conv2d(32, 64, kernel_size=(5, 5), stride=(1, 1), padding=(2, 2))
+    (relu2): ReLU()
+    (avgPool1): AvgPool2d(kernel_size=2, stride=2, padding=0)
+    (conv3): Conv2d(64, 128, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+    (relu3): ReLU()
+    (maxPool3): MaxPool2d(kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=False)
+    (conv4): Conv2d(128, 128, kernel_size=(5, 5), stride=(1, 1), padding=(2, 2))
+    (relu4): ReLU()
+    (flattern): Flatten(start_dim=1, end_dim=-1)
+    (fc1): Linear(in_features=2048, out_features=64, bias=True)
+    (out): Linear(in_features=64, out_features=10, bias=True)
+  )
+)
+--------------------------------------------------------------------
+
+
+
+--------------------------------------------------------------------task3_model1_Mon_19_11
+Final validation accuracy 0.6979999542236328
+Final train accuracy 0.8285917639732361
+Final test accuracy 0.6901999711990356
+Batch size: 64, Learning rate: 0.1
+Model1(
+  (model): Sequential(
+    (conv1): Conv2d(3, 32, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+    (relu1): ReLU()
+    (maxPool1): MaxPool2d(kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=False)
+    (conv2): Conv2d(32, 48, kernel_size=(5, 5), stride=(1, 1), padding=(2, 2))
+    (relu2): ReLU()
+    (avgPool1): AvgPool2d(kernel_size=2, stride=2, padding=0)
+    (conv3): Conv2d(48, 72, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+    (relu3): ReLU()
+    (maxPool3): MaxPool2d(kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=False)
+    (conv4): Conv2d(72, 128, kernel_size=(5, 5), stride=(1, 1), padding=(2, 2))
+    (relu4): ReLU()
+    (flattern): Flatten(start_dim=1, end_dim=-1)
+    (fc1): Linear(in_features=2048, out_features=64, bias=True)
+    (out): Linear(in_features=64, out_features=10, bias=True)
+  )
+)
+--------------------------------------------------------------------
+
+
+
+--------------------------------------------------------------------task3_model1_Mon_19_14
+Final validation accuracy 0.7305999994277954
+Final train accuracy 0.888535737991333
+Final test accuracy 0.7190999984741211
+Batch size: 64, Learning rate: 0.1
+Model1(
+  (model): Sequential(
+    (conv1): Conv2d(3, 32, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+    (relu1): ReLU()
+    (maxPool1): MaxPool2d(kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=False)
+    (conv2): Conv2d(32, 64, kernel_size=(5, 5), stride=(1, 1), padding=(2, 2))
+    (relu2): ReLU()
+    (avgPool1): AvgPool2d(kernel_size=2, stride=2, padding=0)
+    (conv3): Conv2d(64, 128, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+    (relu3): ReLU()
+    (maxPool3): MaxPool2d(kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=False)
+    (conv4): Conv2d(128, 256, kernel_size=(5, 5), stride=(1, 1), padding=(2, 2))
+    (relu4): ReLU()
+    (flattern): Flatten(start_dim=1, end_dim=-1)
+    (fc1): Linear(in_features=4096, out_features=64, bias=True)
+    (out): Linear(in_features=64, out_features=10, bias=True)
+  )
+)
+--------------------------------------------------------------------
+
+
+
+--------------------------------------------------------------------task3_model1_Mon_19_21
+Final validation accuracy 0.7297999858856201
+Final train accuracy 0.893069863319397
+Final test accuracy 0.7246999740600586
+Batch size: 64, Learning rate: 0.1
+Model1(
+  (model): Sequential(
+    (conv1): Conv2d(3, 32, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+    (relu1): ReLU()
+    (maxPool1): MaxPool2d(kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=False)
+    (conv2): Conv2d(32, 64, kernel_size=(5, 5), stride=(1, 1), padding=(2, 2))
+    (relu2): ReLU()
+    (avgPool1): AvgPool2d(kernel_size=2, stride=2, padding=0)
+    (conv3): Conv2d(64, 128, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+    (relu3): ReLU()
+    (maxPool3): MaxPool2d(kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=False)
+    (conv4): Conv2d(128, 256, kernel_size=(5, 5), stride=(1, 1), padding=(2, 2))
+    (relu4): ReLU()
+    (flattern): Flatten(start_dim=1, end_dim=-1)
+    (fc1): Linear(in_features=4096, out_features=128, bias=True)
+    (fc2): Linear(in_features=128, out_features=64, bias=True)
+    (out): Linear(in_features=64, out_features=10, bias=True)
+  )
+)
+--------------------------------------------------------------------
+
+
+
+--------------------------------------------------------------------task3_model1_Mon_19_59
+Final validation accuracy 0.7283999919891357
+Final train accuracy 0.8725106716156006
+Final test accuracy 0.7221999764442444
+Batch size: 64, Learning rate: 0.05
+Model1(
+  (model): Sequential(
+    (conv1): Conv2d(3, 32, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+    (relu1): ReLU()
+    (maxPool1): MaxPool2d(kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=False)
+    (conv2): Conv2d(32, 64, kernel_size=(5, 5), stride=(1, 1), padding=(2, 2))
+    (relu2): ReLU()
+    (avgPool1): AvgPool2d(kernel_size=2, stride=2, padding=0)
+    (conv3): Conv2d(64, 128, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+    (relu3): ReLU()
+    (maxPool3): MaxPool2d(kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=False)
+    (conv4): Conv2d(128, 256, kernel_size=(5, 5), stride=(1, 1), padding=(2, 2))
+    (relu4): ReLU()
+    (flattern): Flatten(start_dim=1, end_dim=-1)
+    (fc1): Linear(in_features=4096, out_features=128, bias=True)
+    (fc2): Linear(in_features=128, out_features=64, bias=True)
+    (out): Linear(in_features=64, out_features=10, bias=True)
+  )
+)
+--------------------------------------------------------------------
+
+
+
+--------------------------------------------------------------------task3_model1_Mon_20_03
+Final validation accuracy 0.7297999858856201
+Final train accuracy 0.893069863319397
+Final test accuracy 0.7246999740600586
+Batch size: 64, Learning rate: 0.1
+Model1(
+  (model): Sequential(
+    (conv1): Conv2d(3, 32, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+    (relu1): ReLU()
+    (maxPool1): MaxPool2d(kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=False)
+    (conv2): Conv2d(32, 64, kernel_size=(5, 5), stride=(1, 1), padding=(2, 2))
+    (relu2): ReLU()
+    (avgPool1): AvgPool2d(kernel_size=2, stride=2, padding=0)
+    (conv3): Conv2d(64, 128, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+    (relu3): ReLU()
+    (maxPool3): MaxPool2d(kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=False)
+    (conv4): Conv2d(128, 256, kernel_size=(5, 5), stride=(1, 1), padding=(2, 2))
+    (relu4): ReLU()
+    (flattern): Flatten(start_dim=1, end_dim=-1)
+    (fc1): Linear(in_features=4096, out_features=128, bias=True)
+    (fc2): Linear(in_features=128, out_features=64, bias=True)
+    (out): Linear(in_features=64, out_features=10, bias=True)
+  )
+)
+--------------------------------------------------------------------
+
+
+
+--------------------------------------------------------------------task3_model1_Mon_20_17
+Final validation accuracy 0.7297999858856201
+Final train accuracy 0.893069863319397
+Final test accuracy 0.7246999740600586
+Batch size: 64, Learning rate: 0.1
+Model1(
+  (model): Sequential(
+    (conv1): Conv2d(3, 32, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+    (relu1): ReLU()
+    (maxPool1): MaxPool2d(kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=False)
+    (conv2): Conv2d(32, 64, kernel_size=(5, 5), stride=(1, 1), padding=(2, 2))
+    (relu2): ReLU()
+    (avgPool1): AvgPool2d(kernel_size=2, stride=2, padding=0)
+    (conv3): Conv2d(64, 128, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+    (relu3): ReLU()
+    (maxPool3): MaxPool2d(kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=False)
+    (conv4): Conv2d(128, 256, kernel_size=(5, 5), stride=(1, 1), padding=(2, 2))
+    (relu4): ReLU()
+    (flattern): Flatten(start_dim=1, end_dim=-1)
+    (fc1): Linear(in_features=4096, out_features=128, bias=True)
+    (fc2): Linear(in_features=128, out_features=64, bias=True)
+    (out): Linear(in_features=64, out_features=10, bias=True)
+  )
+)
+--------------------------------------------------------------------
+
+
+
+--------------------------------------------------------------------task3_model1_Mon_20_22
+Final validation accuracy 0.7437999844551086
+Final train accuracy 0.9326769113540649
+Final test accuracy 0.7379999756813049
+Batch size: 64, Learning rate: 0.1
+Model1(
+  (model): Sequential(
+    (conv1): Conv2d(3, 32, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+    (relu1): ReLU()
+    (maxPool1): MaxPool2d(kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=False)
+    (conv2): Conv2d(32, 64, kernel_size=(5, 5), stride=(1, 1), padding=(2, 2))
+    (relu2): ReLU()
+    (avgPool1): AvgPool2d(kernel_size=2, stride=2, padding=0)
+    (conv3): Conv2d(64, 128, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+    (relu3): ReLU()
+    (maxPool3): MaxPool2d(kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=False)
+    (conv4): Conv2d(128, 256, kernel_size=(5, 5), stride=(1, 1), padding=(2, 2))
+    (relu4): ReLU()
+    (flattern): Flatten(start_dim=1, end_dim=-1)
+    (fc1): Linear(in_features=4096, out_features=128, bias=True)
+    (relu5): ReLU()
+    (fc2): Linear(in_features=128, out_features=64, bias=True)
+    (relu6): ReLU()
+    (out): Linear(in_features=64, out_features=10, bias=True)
+  )
+)
+--------------------------------------------------------------------
+
+
+
+--------------------------------------------------------------------task3_model1_Mon_20_26
+Final validation accuracy 0.73499995470047
+Final train accuracy 0.900337815284729
+Final test accuracy 0.7409999966621399
+Batch size: 32, Learning rate: 0.1
+Model1(
+  (model): Sequential(
+    (conv1): Conv2d(3, 32, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+    (relu1): ReLU()
+    (maxPool1): MaxPool2d(kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=False)
+    (conv2): Conv2d(32, 64, kernel_size=(5, 5), stride=(1, 1), padding=(2, 2))
+    (relu2): ReLU()
+    (avgPool1): AvgPool2d(kernel_size=2, stride=2, padding=0)
+    (conv3): Conv2d(64, 128, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+    (maxPool3): MaxPool2d(kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=False)
+    (conv4): Conv2d(128, 256, kernel_size=(5, 5), stride=(1, 1), padding=(2, 2))
+    (relu4): ReLU()
+    (flattern): Flatten(start_dim=1, end_dim=-1)
+    (fc1): Linear(in_features=4096, out_features=128, bias=True)
+    (relu5): ReLU()
+    (fc2): Linear(in_features=128, out_features=64, bias=True)
+    (relu6): ReLU()
+    (out): Linear(in_features=64, out_features=10, bias=True)
+  )
+)
+--------------------------------------------------------------------
+
+
+
+--------------------------------------------------------------------task3_model1_Mon_20_30
+Final validation accuracy 0.73499995470047
+Final train accuracy 0.900337815284729
+Final test accuracy 0.7409999966621399
+Batch size: 32, Learning rate: 0.1
+Model1(
+  (model): Sequential(
+    (conv1): Conv2d(3, 32, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+    (relu1): ReLU()
+    (maxPool1): MaxPool2d(kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=False)
+    (conv2): Conv2d(32, 64, kernel_size=(5, 5), stride=(1, 1), padding=(2, 2))
+    (relu2): ReLU()
+    (avgPool1): AvgPool2d(kernel_size=2, stride=2, padding=0)
+    (conv3): Conv2d(64, 128, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+    (maxPool3): MaxPool2d(kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=False)
+    (conv4): Conv2d(128, 256, kernel_size=(5, 5), stride=(1, 1), padding=(2, 2))
+    (relu4): ReLU()
+    (flattern): Flatten(start_dim=1, end_dim=-1)
+    (fc1): Linear(in_features=4096, out_features=128, bias=True)
+    (relu5): ReLU()
+    (fc2): Linear(in_features=128, out_features=64, bias=True)
+    (relu6): ReLU()
+    (out): Linear(in_features=64, out_features=10, bias=True)
+  )
+)
+--------------------------------------------------------------------
+
+
+
+--------------------------------------------------------------------task3_model1_Mon_21_27
+Final validation accuracy 0.7301999926567078
+Final train accuracy 0.8803120255470276
+Final test accuracy 0.7324000000953674
+Batch size: 64, Learning rate: 0.1
+Model1(
+  (model): Sequential(
+    (conv1): Conv2d(3, 32, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+    (relu1): ReLU()
+    (maxPool1): MaxPool2d(kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=False)
+    (conv2): Conv2d(32, 64, kernel_size=(5, 5), stride=(1, 1), padding=(2, 2))
+    (relu2): ReLU()
+    (avgPool1): AvgPool2d(kernel_size=2, stride=2, padding=0)
+    (conv3): Conv2d(64, 128, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+    (maxPool3): MaxPool2d(kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=False)
+    (conv4): Conv2d(128, 256, kernel_size=(5, 5), stride=(1, 1), padding=(2, 2))
+    (relu4): ReLU()
+    (flattern): Flatten(start_dim=1, end_dim=-1)
+    (fc1): Linear(in_features=4096, out_features=128, bias=True)
+    (relu5): ReLU()
+    (fc2): Linear(in_features=128, out_features=64, bias=True)
+    (relu6): ReLU()
+    (out): Linear(in_features=64, out_features=10, bias=True)
+  )
+)
+--------------------------------------------------------------------
+
+
+
+--------------------------------------------------------------------task3_model1_Mon_21_30
+Final validation accuracy 0.7301999926567078
+Final train accuracy 0.8803120255470276
+Final test accuracy 0.7324000000953674
+Batch size: 64, Learning rate: 0.1
+Model1(
+  (model): Sequential(
+    (conv1): Conv2d(3, 32, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+    (relu1): ReLU()
+    (maxPool1): MaxPool2d(kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=False)
+    (conv2): Conv2d(32, 64, kernel_size=(5, 5), stride=(1, 1), padding=(2, 2))
+    (relu2): ReLU()
+    (avgPool1): AvgPool2d(kernel_size=2, stride=2, padding=0)
+    (conv3): Conv2d(64, 128, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+    (maxPool3): MaxPool2d(kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=False)
+    (conv4): Conv2d(128, 256, kernel_size=(5, 5), stride=(1, 1), padding=(2, 2))
+    (relu4): ReLU()
+    (flattern): Flatten(start_dim=1, end_dim=-1)
+    (fc1): Linear(in_features=4096, out_features=128, bias=True)
+    (relu5): ReLU()
+    (fc2): Linear(in_features=128, out_features=64, bias=True)
+    (relu6): ReLU()
+    (out): Linear(in_features=64, out_features=10, bias=True)
+  )
+)
+--------------------------------------------------------------------
+
+
+
+--------------------------------------------------------------------task3_model1_Mon_21_45
+Final validation accuracy 0.7129999995231628
+Final train accuracy 0.8343555927276611
+Final test accuracy 0.7125999927520752
+Batch size: 4, Learning rate: 0.02
+Model1(
+  (model): Sequential(
+    (conv1): Conv2d(3, 32, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+    (relu1): ReLU()
+    (maxPool1): MaxPool2d(kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=False)
+    (conv2): Conv2d(32, 64, kernel_size=(5, 5), stride=(1, 1), padding=(2, 2))
+    (relu2): ReLU()
+    (avgPool1): AvgPool2d(kernel_size=2, stride=2, padding=0)
+    (conv3): Conv2d(64, 128, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+    (maxPool3): MaxPool2d(kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=False)
+    (conv4): Conv2d(128, 256, kernel_size=(5, 5), stride=(1, 1), padding=(2, 2))
+    (relu4): ReLU()
+    (flattern): Flatten(start_dim=1, end_dim=-1)
+    (fc1): Linear(in_features=4096, out_features=128, bias=True)
+    (relu5): ReLU()
+    (fc2): Linear(in_features=128, out_features=64, bias=True)
+    (relu6): ReLU()
+    (out): Linear(in_features=64, out_features=10, bias=True)
+  )
+)
+--------------------------------------------------------------------
+
+
+
+--------------------------------------------------------------------task3_model1_Mon_21_51
+Final validation accuracy 0.7637999653816223
+Final train accuracy 0.9105333685874939
+Final test accuracy 0.7586999535560608
+Batch size: 50, Learning rate: 0.02
+Model1(
+  (model): Sequential(
+    (conv1): Conv2d(3, 32, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+    (relu1): ReLU()
+    (maxPool1): MaxPool2d(kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=False)
+    (conv2): Conv2d(32, 64, kernel_size=(5, 5), stride=(1, 1), padding=(2, 2))
+    (relu2): ReLU()
+    (avgPool1): AvgPool2d(kernel_size=2, stride=2, padding=0)
+    (conv3): Conv2d(64, 128, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+    (batchNorm1): BatchNorm2d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    (maxPool3): MaxPool2d(kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=False)
+    (conv4): Conv2d(128, 256, kernel_size=(5, 5), stride=(1, 1), padding=(2, 2))
+    (relu4): ReLU()
+    (flattern): Flatten(start_dim=1, end_dim=-1)
+    (fc1): Linear(in_features=4096, out_features=128, bias=True)
+    (relu5): ReLU()
+    (fc2): Linear(in_features=128, out_features=64, bias=True)
+    (relu6): ReLU()
+    (out): Linear(in_features=64, out_features=10, bias=True)
+  )
+)
+--------------------------------------------------------------------
+
+
+
+--------------------------------------------------------------------task3_model1_Mon_21_55
+Final validation accuracy 0.761199951171875
+Final train accuracy 0.9088888764381409
+Final test accuracy 0.7581999897956848
+Batch size: 50, Learning rate: 0.1
+Model1(
+  (model): Sequential(
+    (conv1): Conv2d(3, 32, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+    (relu1): ReLU()
+    (maxPool1): MaxPool2d(kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=False)
+    (conv2): Conv2d(32, 64, kernel_size=(5, 5), stride=(1, 1), padding=(2, 2))
+    (relu2): ReLU()
+    (avgPool1): AvgPool2d(kernel_size=2, stride=2, padding=0)
+    (conv3): Conv2d(64, 128, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+    (batchNorm1): BatchNorm2d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    (maxPool3): MaxPool2d(kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=False)
+    (conv4): Conv2d(128, 256, kernel_size=(5, 5), stride=(1, 1), padding=(2, 2))
+    (relu4): ReLU()
+    (flattern): Flatten(start_dim=1, end_dim=-1)
+    (fc1): Linear(in_features=4096, out_features=128, bias=True)
+    (relu5): ReLU()
+    (fc2): Linear(in_features=128, out_features=64, bias=True)
+    (relu6): ReLU()
+    (out): Linear(in_features=64, out_features=10, bias=True)
+  )
+)
+--------------------------------------------------------------------
+
+
+
+--------------------------------------------------------------------task3_model1_Mon_22_02
+Final validation accuracy 0.7529999613761902
+Final train accuracy 0.8476889133453369
+Final test accuracy 0.7394999861717224
+Batch size: 50, Learning rate: 0.01
+Model1(
+  (model): Sequential(
+    (conv1): Conv2d(3, 32, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+    (relu1): ReLU()
+    (maxPool1): MaxPool2d(kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=False)
+    (conv2): Conv2d(32, 64, kernel_size=(5, 5), stride=(1, 1), padding=(2, 2))
+    (relu2): ReLU()
+    (avgPool1): AvgPool2d(kernel_size=2, stride=2, padding=0)
+    (conv3): Conv2d(64, 128, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+    (batchNorm1): BatchNorm2d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    (maxPool3): MaxPool2d(kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=False)
+    (conv4): Conv2d(128, 256, kernel_size=(5, 5), stride=(1, 1), padding=(2, 2))
+    (relu4): ReLU()
+    (flattern): Flatten(start_dim=1, end_dim=-1)
+    (fc1): Linear(in_features=4096, out_features=128, bias=True)
+    (relu5): ReLU()
+    (fc2): Linear(in_features=128, out_features=64, bias=True)
+    (relu6): ReLU()
+    (out): Linear(in_features=64, out_features=10, bias=True)
+  )
+)
+--------------------------------------------------------------------
+
+
+
+--------------------------------------------------------------------task3_model1_Mon_22_07
+Final validation accuracy 0.7637999653816223
+Final train accuracy 0.9105333685874939
+Final test accuracy 0.7586999535560608
+Batch size: 50, Learning rate: 0.02
+Model1(
+  (model): Sequential(
+    (conv1): Conv2d(3, 32, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+    (relu1): ReLU()
+    (maxPool1): MaxPool2d(kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=False)
+    (conv2): Conv2d(32, 64, kernel_size=(5, 5), stride=(1, 1), padding=(2, 2))
+    (relu2): ReLU()
+    (avgPool1): AvgPool2d(kernel_size=2, stride=2, padding=0)
+    (conv3): Conv2d(64, 128, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+    (batchNorm1): BatchNorm2d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    (maxPool3): MaxPool2d(kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=False)
+    (conv4): Conv2d(128, 256, kernel_size=(5, 5), stride=(1, 1), padding=(2, 2))
+    (relu4): ReLU()
+    (flattern): Flatten(start_dim=1, end_dim=-1)
+    (fc1): Linear(in_features=4096, out_features=128, bias=True)
+    (relu5): ReLU()
+    (fc2): Linear(in_features=128, out_features=64, bias=True)
+    (relu6): ReLU()
+    (out): Linear(in_features=64, out_features=10, bias=True)
+  )
+)
+--------------------------------------------------------------------
+
+
+
+--------------------------------------------------------------------task3_model1_Mon_22_14
+Final validation accuracy 0.764799952507019
+Final train accuracy 0.929288923740387
+Final test accuracy 0.765999972820282
+Batch size: 50, Learning rate: 0.05
+Model1(
+  (model): Sequential(
+    (conv1): Conv2d(3, 32, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+    (relu1): ReLU()
+    (maxPool1): MaxPool2d(kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=False)
+    (conv2): Conv2d(32, 64, kernel_size=(5, 5), stride=(1, 1), padding=(2, 2))
+    (relu2): ReLU()
+    (avgPool1): AvgPool2d(kernel_size=2, stride=2, padding=0)
+    (conv3): Conv2d(64, 128, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+    (batchNorm1): BatchNorm2d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    (maxPool3): MaxPool2d(kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=False)
+    (conv4): Conv2d(128, 256, kernel_size=(5, 5), stride=(1, 1), padding=(2, 2))
+    (relu4): ReLU()
+    (flattern): Flatten(start_dim=1, end_dim=-1)
+    (fc1): Linear(in_features=4096, out_features=128, bias=True)
+    (relu5): ReLU()
+    (fc2): Linear(in_features=128, out_features=64, bias=True)
+    (relu6): ReLU()
+    (out): Linear(in_features=64, out_features=10, bias=True)
+  )
+)
+--------------------------------------------------------------------
+
+
+
+--------------------------------------------------------------------task3_model1_Mon_22_18
+Final validation accuracy 0.772599995136261
+Final train accuracy 0.9185855388641357
+Final test accuracy 0.7721999883651733
+Batch size: 32, Learning rate: 0.05
+Model1(
+  (model): Sequential(
+    (conv1): Conv2d(3, 32, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+    (relu1): ReLU()
+    (maxPool1): MaxPool2d(kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=False)
+    (conv2): Conv2d(32, 64, kernel_size=(5, 5), stride=(1, 1), padding=(2, 2))
+    (relu2): ReLU()
+    (avgPool1): AvgPool2d(kernel_size=2, stride=2, padding=0)
+    (conv3): Conv2d(64, 128, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+    (batchNorm1): BatchNorm2d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    (maxPool3): MaxPool2d(kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=False)
+    (conv4): Conv2d(128, 256, kernel_size=(5, 5), stride=(1, 1), padding=(2, 2))
+    (relu4): ReLU()
+    (flattern): Flatten(start_dim=1, end_dim=-1)
+    (fc1): Linear(in_features=4096, out_features=128, bias=True)
+    (relu5): ReLU()
+    (fc2): Linear(in_features=128, out_features=64, bias=True)
+    (relu6): ReLU()
+    (out): Linear(in_features=64, out_features=10, bias=True)
+  )
+)
+--------------------------------------------------------------------
+
+
+
+--------------------------------------------------------------------task3_model1_Mon_22_22
+Final validation accuracy 0.7585999965667725
+Final train accuracy 0.8764891624450684
+Final test accuracy 0.7619999647140503
+Batch size: 64, Learning rate: 0.05
+Model1(
+  (model): Sequential(
+    (conv1): Conv2d(3, 32, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+    (relu1): ReLU()
+    (maxPool1): MaxPool2d(kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=False)
+    (conv2): Conv2d(32, 64, kernel_size=(5, 5), stride=(1, 1), padding=(2, 2))
+    (relu2): ReLU()
+    (avgPool1): AvgPool2d(kernel_size=2, stride=2, padding=0)
+    (conv3): Conv2d(64, 128, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+    (batchNorm1): BatchNorm2d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    (maxPool3): MaxPool2d(kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=False)
+    (conv4): Conv2d(128, 256, kernel_size=(5, 5), stride=(1, 1), padding=(2, 2))
+    (relu4): ReLU()
+    (flattern): Flatten(start_dim=1, end_dim=-1)
+    (fc1): Linear(in_features=4096, out_features=128, bias=True)
+    (relu5): ReLU()
+    (fc2): Linear(in_features=128, out_features=64, bias=True)
+    (relu6): ReLU()
+    (out): Linear(in_features=64, out_features=10, bias=True)
+  )
+)
+--------------------------------------------------------------------
+
+
+
+--------------------------------------------------------------------task3_model1_Mon_22_28
+Final validation accuracy 0.7581999897956848
+Final train accuracy 0.8935555815696716
+Final test accuracy 0.7543999552726746
+Batch size: 40, Learning rate: 0.05
+Model1(
+  (model): Sequential(
+    (conv1): Conv2d(3, 32, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+    (relu1): ReLU()
+    (maxPool1): MaxPool2d(kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=False)
+    (conv2): Conv2d(32, 64, kernel_size=(5, 5), stride=(1, 1), padding=(2, 2))
+    (relu2): ReLU()
+    (avgPool1): AvgPool2d(kernel_size=2, stride=2, padding=0)
+    (conv3): Conv2d(64, 128, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+    (batchNorm1): BatchNorm2d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    (maxPool3): MaxPool2d(kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=False)
+    (conv4): Conv2d(128, 256, kernel_size=(5, 5), stride=(1, 1), padding=(2, 2))
+    (relu4): ReLU()
+    (flattern): Flatten(start_dim=1, end_dim=-1)
+    (fc1): Linear(in_features=4096, out_features=128, bias=True)
+    (relu5): ReLU()
+    (fc2): Linear(in_features=128, out_features=64, bias=True)
+    (relu6): ReLU()
+    (out): Linear(in_features=64, out_features=10, bias=True)
+  )
+)
+--------------------------------------------------------------------
+
+
+
+--------------------------------------------------------------------task3_model2_Mon_22_29
+Final validation accuracy 0.0965999960899353
+Final train accuracy 0.10037340223789215
+Final test accuracy 0.09999999403953552
+Model2(
+  (model): Sequential(
+    (conv1): Conv2d(3, 32, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+    (relu1): ReLU()
+    (admaxPool1): AdaptiveMaxPool2d(output_size=32)
+    (conv2): Conv2d(32, 64, kernel_size=(5, 5), stride=(2, 2), padding=(2, 2))
+    (relu2): ReLU()
+    (maxPool2): MaxPool2d(kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=False)
+    (conv3): Conv2d(64, 128, kernel_size=(5, 5), stride=(1, 1), padding=(2, 2))
+    (relu3): ReLU()
+    (maxPool3): MaxPool2d(kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=False)
+    (flattern): Flatten(start_dim=1, end_dim=-1)
+    (fc1): Linear(in_features=2048, out_features=64, bias=True)
+    (relu4): ReLU()
+    (out): Linear(in_features=64, out_features=10, bias=True)
+  )
+)
+--------------------------------------------------------------------
+
+
+
+--------------------------------------------------------------------task3_model1_Mon_22_33
+Final validation accuracy 0.10040000081062317
+Final train accuracy 0.09995555877685547
+Final test accuracy 0.09999999403953552
+Batch size: 50, Learning rate: 0.05
+Model1(
+  (model): Sequential(
+    (conv1): Conv2d(3, 32, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+    (relu1): ReLU()
+    (maxPool1): MaxPool2d(kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=False)
+    (conv2): Conv2d(32, 64, kernel_size=(5, 5), stride=(1, 1), padding=(2, 2))
+    (relu2): ReLU()
+    (avgPool1): AvgPool2d(kernel_size=2, stride=2, padding=0)
+    (conv3): Conv2d(64, 128, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+    (batchNorm1): BatchNorm2d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    (maxPool3): MaxPool2d(kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=False)
+    (conv4): Conv2d(128, 256, kernel_size=(5, 5), stride=(1, 1), padding=(2, 2))
+    (relu4): ReLU()
+    (flattern): Flatten(start_dim=1, end_dim=-1)
+    (fc1): Linear(in_features=4096, out_features=128, bias=True)
+    (relu5): ReLU()
+    (fc2): Linear(in_features=128, out_features=64, bias=True)
+    (relu6): ReLU()
+    (out): Linear(in_features=64, out_features=10, bias=True)
+  )
+)
+--------------------------------------------------------------------
+
+
+
+--------------------------------------------------------------------task3_model1_Mon_22_47
+Final validation accuracy 0.7529999613761902
+Final train accuracy 0.9075333476066589
+Final test accuracy 0.7527999877929688
+Batch size: 50, Learning rate: 0.05
+Model1(
+  (model): Sequential(
+    (conv1): Conv2d(3, 32, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+    (relu1): ReLU()
+    (maxPool1): MaxPool2d(kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=False)
+    (conv2): Conv2d(32, 64, kernel_size=(5, 5), stride=(1, 1), padding=(2, 2))
+    (relu2): ReLU()
+    (avgPool1): AvgPool2d(kernel_size=2, stride=2, padding=0)
+    (conv3): Conv2d(64, 128, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+    (batchNorm1): BatchNorm2d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    (maxPool3): MaxPool2d(kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=False)
+    (conv4): Conv2d(128, 256, kernel_size=(5, 5), stride=(1, 1), padding=(2, 2))
+    (relu4): ReLU()
+    (flattern): Flatten(start_dim=1, end_dim=-1)
+    (fc1): Linear(in_features=4096, out_features=128, bias=True)
+    (relu5): ReLU()
+    (fc2): Linear(in_features=128, out_features=64, bias=True)
+    (relu6): ReLU()
+    (out): Linear(in_features=64, out_features=10, bias=True)
+  )
+)
+--------------------------------------------------------------------
+
+
+
+--------------------------------------------------------------------task3_model1_Mon_22_52
+Final validation accuracy 0.7529999613761902
+Final train accuracy 0.9075333476066589
+Final test accuracy 0.7527999877929688
+Batch size: 50, Learning rate: 0.05
+Model1(
+  (model): Sequential(
+    (conv1): Conv2d(3, 32, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+    (relu1): ReLU()
+    (maxPool1): MaxPool2d(kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=False)
+    (conv2): Conv2d(32, 64, kernel_size=(5, 5), stride=(1, 1), padding=(2, 2))
+    (relu2): ReLU()
+    (avgPool1): AvgPool2d(kernel_size=2, stride=2, padding=0)
+    (conv3): Conv2d(64, 128, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+    (batchNorm1): BatchNorm2d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    (maxPool3): MaxPool2d(kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=False)
+    (conv4): Conv2d(128, 256, kernel_size=(5, 5), stride=(1, 1), padding=(2, 2))
+    (relu4): ReLU()
+    (flattern): Flatten(start_dim=1, end_dim=-1)
+    (fc1): Linear(in_features=4096, out_features=128, bias=True)
+    (relu5): ReLU()
+    (fc2): Linear(in_features=128, out_features=64, bias=True)
+    (relu6): ReLU()
+    (out): Linear(in_features=64, out_features=10, bias=True)
+  )
+)
+--------------------------------------------------------------------
+
+
+
+--------------------------------------------------------------------task3_model2_Mon_22_54
+Final validation accuracy 0.7585999965667725
+Final train accuracy 0.8764891624450684
+Final test accuracy 0.7619999647140503
+Batch size: 64, Learning rate: 0.05
+Model2(
+  (model): Sequential(
+    (conv1): Conv2d(3, 32, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+    (relu1): ReLU()
+    (maxPool1): MaxPool2d(kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=False)
+    (conv2): Conv2d(32, 64, kernel_size=(5, 5), stride=(1, 1), padding=(2, 2))
+    (relu2): ReLU()
+    (avgPool1): AvgPool2d(kernel_size=2, stride=2, padding=0)
+    (conv3): Conv2d(64, 128, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+    (batchNorm1): BatchNorm2d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    (maxPool3): MaxPool2d(kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=False)
+    (conv4): Conv2d(128, 256, kernel_size=(5, 5), stride=(1, 1), padding=(2, 2))
+    (relu4): ReLU()
+    (flattern): Flatten(start_dim=1, end_dim=-1)
+    (fc1): Linear(in_features=4096, out_features=128, bias=True)
+    (relu5): ReLU()
+    (fc2): Linear(in_features=128, out_features=64, bias=True)
+    (relu6): ReLU()
+    (out): Linear(in_features=64, out_features=10, bias=True)
+  )
+)
+--------------------------------------------------------------------
+
+
+
+--------------------------------------------------------------------task3_model1_Mon_23_11
+Final validation accuracy 0.7170000076293945
+Final train accuracy 0.8523777723312378
+Final test accuracy 0.7222999930381775
+Batch size: 50, Learning rate: 0.05
+Model1(
+  (model): Sequential(
+    (conv1): Conv2d(3, 32, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+    (relu1): ReLU()
+    (maxPool1): MaxPool2d(kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=False)
+    (conv2): Conv2d(32, 64, kernel_size=(5, 5), stride=(1, 1), padding=(2, 2))
+    (relu2): ReLU()
+    (avgPool1): AvgPool2d(kernel_size=2, stride=2, padding=0)
+    (conv3): Conv2d(64, 128, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+    (batchNorm1): BatchNorm2d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    (maxPool3): MaxPool2d(kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=False)
+    (conv4): Conv2d(128, 256, kernel_size=(5, 5), stride=(1, 1), padding=(2, 2))
+    (relu4): ReLU()
+    (flattern): Flatten(start_dim=1, end_dim=-1)
+    (fc1): Linear(in_features=4096, out_features=128, bias=True)
+    (relu5): ReLU()
+    (fc2): Linear(in_features=128, out_features=64, bias=True)
+    (relu6): ReLU()
+    (out): Linear(in_features=64, out_features=10, bias=True)
+  )
+)
+--------------------------------------------------------------------
+
+
+
+--------------------------------------------------------------------task3_model1_Mon_23_23
+Final validation accuracy 0.09640000015497208
+Final train accuracy 0.10040000081062317
+Final test accuracy 0.09999999403953552
+Batch size: 50, Learning rate: 0.05
+Model1(
+  (model): Sequential(
+    (conv1): Conv2d(3, 32, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+    (relu1): ReLU()
+    (maxPool1): MaxPool2d(kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=False)
+    (conv2): Conv2d(32, 64, kernel_size=(5, 5), stride=(1, 1), padding=(2, 2))
+    (relu2): ReLU()
+    (avgPool1): AvgPool2d(kernel_size=2, stride=2, padding=0)
+    (conv3): Conv2d(64, 128, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+    (batchNorm1): BatchNorm2d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    (maxPool3): MaxPool2d(kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=False)
+    (conv4): Conv2d(128, 256, kernel_size=(5, 5), stride=(1, 1), padding=(2, 2))
+    (relu4): ReLU()
+    (flattern): Flatten(start_dim=1, end_dim=-1)
+    (fc1): Linear(in_features=4096, out_features=128, bias=True)
+    (relu5): ReLU()
+    (fc2): Linear(in_features=128, out_features=64, bias=True)
+    (relu6): ReLU()
+    (out): Linear(in_features=64, out_features=10, bias=True)
+  )
+)
+--------------------------------------------------------------------
+
+
+
+--------------------------------------------------------------------task3_model1_Mon_23_26
+Final validation accuracy 0.5981999635696411
+Final train accuracy 0.6145333647727966
+Final test accuracy 0.6026999950408936
+Batch size: 50, Learning rate: 0.05
+Model1(
+  (model): Sequential(
+    (conv1): Conv2d(3, 32, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+    (relu1): ReLU()
+    (maxPool1): MaxPool2d(kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=False)
+    (conv2): Conv2d(32, 64, kernel_size=(5, 5), stride=(1, 1), padding=(2, 2))
+    (relu2): ReLU()
+    (avgPool1): AvgPool2d(kernel_size=2, stride=2, padding=0)
+    (conv3): Conv2d(64, 128, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+    (batchNorm1): BatchNorm2d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    (maxPool3): MaxPool2d(kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=False)
+    (conv4): Conv2d(128, 256, kernel_size=(5, 5), stride=(1, 1), padding=(2, 2))
+    (relu4): ReLU()
+    (flattern): Flatten(start_dim=1, end_dim=-1)
+    (fc1): Linear(in_features=4096, out_features=128, bias=True)
+    (relu5): ReLU()
+    (fc2): Linear(in_features=128, out_features=64, bias=True)
+    (relu6): ReLU()
+    (out): Linear(in_features=64, out_features=10, bias=True)
+  )
+)
+--------------------------------------------------------------------
+
+
+
+--------------------------------------------------------------------task3_model1_Mon_23_35
+Final validation accuracy 0.7741999626159668
+Final train accuracy 0.9347777962684631
+Final test accuracy 0.7671999931335449
+Batch size: 50, Learning rate: 0.05
+Model1(
+  (model): Sequential(
+    (conv1): Conv2d(3, 32, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+    (relu1): ReLU()
+    (maxPool1): MaxPool2d(kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=False)
+    (conv2): Conv2d(32, 64, kernel_size=(5, 5), stride=(1, 1), padding=(2, 2))
+    (relu2): ReLU()
+    (avgPool1): AvgPool2d(kernel_size=2, stride=2, padding=0)
+    (conv3): Conv2d(64, 128, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+    (batchNorm1): BatchNorm2d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    (maxPool3): MaxPool2d(kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=False)
+    (conv4): Conv2d(128, 256, kernel_size=(5, 5), stride=(1, 1), padding=(2, 2))
+    (relu4): ReLU()
+    (flattern): Flatten(start_dim=1, end_dim=-1)
+    (fc1): Linear(in_features=4096, out_features=128, bias=True)
+    (relu5): ReLU()
+    (fc2): Linear(in_features=128, out_features=64, bias=True)
+    (relu6): ReLU()
+    (out): Linear(in_features=64, out_features=10, bias=True)
+  )
+)
+--------------------------------------------------------------------
+
+
+
+--------------------------------------------------------------------task3_model1_Mon_23_39
+Final validation accuracy 0.7615999579429626
+Final train accuracy 0.8793340921401978
+Final test accuracy 0.7558000087738037
+Batch size: 32, Learning rate: 0.08
+Model1(
+  (model): Sequential(
+    (conv1): Conv2d(3, 32, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+    (relu1): ReLU()
+    (maxPool1): MaxPool2d(kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=False)
+    (conv2): Conv2d(32, 64, kernel_size=(5, 5), stride=(1, 1), padding=(2, 2))
+    (relu2): ReLU()
+    (avgPool1): AvgPool2d(kernel_size=2, stride=2, padding=0)
+    (conv3): Conv2d(64, 128, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+    (batchNorm1): BatchNorm2d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    (maxPool3): MaxPool2d(kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=False)
+    (conv4): Conv2d(128, 256, kernel_size=(5, 5), stride=(1, 1), padding=(2, 2))
+    (relu4): ReLU()
+    (flattern): Flatten(start_dim=1, end_dim=-1)
+    (fc1): Linear(in_features=4096, out_features=128, bias=True)
+    (relu5): ReLU()
+    (fc2): Linear(in_features=128, out_features=64, bias=True)
+    (relu6): ReLU()
+    (out): Linear(in_features=64, out_features=10, bias=True)
+  )
+)
+--------------------------------------------------------------------
+
+
+
+--------------------------------------------------------------------task3_model1_Mon_23_43
+Final validation accuracy 0.7567999958992004
+Final train accuracy 0.8872466087341309
+Final test accuracy 0.7529999613761902
+Batch size: 64, Learning rate: 0.05
+Model1(
+  (model): Sequential(
+    (conv1): Conv2d(3, 32, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+    (relu1): ReLU()
+    (maxPool1): MaxPool2d(kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=False)
+    (conv2): Conv2d(32, 64, kernel_size=(5, 5), stride=(1, 1), padding=(2, 2))
+    (relu2): ReLU()
+    (avgPool1): AvgPool2d(kernel_size=2, stride=2, padding=0)
+    (conv3): Conv2d(64, 128, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+    (batchNorm1): BatchNorm2d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    (maxPool3): MaxPool2d(kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=False)
+    (conv4): Conv2d(128, 256, kernel_size=(5, 5), stride=(1, 1), padding=(2, 2))
+    (relu4): ReLU()
+    (flattern): Flatten(start_dim=1, end_dim=-1)
+    (fc1): Linear(in_features=4096, out_features=128, bias=True)
+    (relu5): ReLU()
+    (fc2): Linear(in_features=128, out_features=64, bias=True)
+    (relu6): ReLU()
+    (out): Linear(in_features=64, out_features=10, bias=True)
+  )
+)
+--------------------------------------------------------------------
+
+
+
+--------------------------------------------------------------------task3_model1_Mon_23_46
+Final validation accuracy 0.7455999851226807
+Final train accuracy 0.8486970663070679
+Final test accuracy 0.7434999942779541
+Batch size: 48, Learning rate: 0.05
+Optimizer: Average SGD, weight decay = 0.001 
+Model1(
+  (model): Sequential(
+    (conv1): Conv2d(3, 32, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+    (relu1): ReLU()
+    (maxPool1): MaxPool2d(kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=False)
+    (conv2): Conv2d(32, 64, kernel_size=(5, 5), stride=(1, 1), padding=(2, 2))
+    (batchNorm1): BatchNorm2d(64, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    (relu2): ReLU()
+    (avgPool1): AvgPool2d(kernel_size=2, stride=2, padding=0)
+    (conv3): Conv2d(64, 128, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+    (batchNorm2): BatchNorm2d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    (maxPool3): MaxPool2d(kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=False)
+    (conv4): Conv2d(128, 256, kernel_size=(5, 5), stride=(1, 1), padding=(2, 2))
+    (relu4): ReLU()
+    (flattern): Flatten(start_dim=1, end_dim=-1)
+    (fc1): Linear(in_features=4096, out_features=128, bias=True)
+    (relu5): ReLU()
+    (fc2): Linear(in_features=128, out_features=64, bias=True)
+    (relu6): ReLU()
+    (out): Linear(in_features=64, out_features=10, bias=True)
+  )
+)
+--------------------------------------------------------------------
+
+
+
+--------------------------------------------------------------------task3_model1_Mon_23_50
+Final validation accuracy 0.7504000067710876
+Final train accuracy 0.8967333436012268
+Final test accuracy 0.7409999966621399
+Batch size: 50, Learning rate: 0.05
+Optimizer: Average SGD, weight decay = 0.001 
+Model1(
+  (model): Sequential(
+    (conv1): Conv2d(3, 32, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+    (relu1): ReLU()
+    (maxPool1): MaxPool2d(kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=False)
+    (conv2): Conv2d(32, 64, kernel_size=(5, 5), stride=(1, 1), padding=(2, 2))
+    (batchNorm1): BatchNorm2d(64, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    (relu2): ReLU()
+    (avgPool1): AvgPool2d(kernel_size=2, stride=2, padding=0)
+    (conv3): Conv2d(64, 128, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+    (batchNorm2): BatchNorm2d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    (maxPool3): MaxPool2d(kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=False)
+    (conv4): Conv2d(128, 256, kernel_size=(5, 5), stride=(1, 1), padding=(2, 2))
+    (relu4): ReLU()
+    (flattern): Flatten(start_dim=1, end_dim=-1)
+    (fc1): Linear(in_features=4096, out_features=128, bias=True)
+    (relu5): ReLU()
+    (fc2): Linear(in_features=128, out_features=64, bias=True)
+    (relu6): ReLU()
+    (out): Linear(in_features=64, out_features=10, bias=True)
+  )
+)
+--------------------------------------------------------------------
+
+
+
+--------------------------------------------------------------------task3_model1_Mon_23_55
+Final validation accuracy 0.7741999626159668
+Final train accuracy 0.9347777962684631
+Final test accuracy 0.7671999931335449
+Batch size: 50, Learning rate: 0.05
+Optimizer: Average SGD, weight decay = 0.001 
+Model1(
+  (model): Sequential(
+    (conv1): Conv2d(3, 32, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+    (relu1): ReLU()
+    (maxPool1): MaxPool2d(kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=False)
+    (conv2): Conv2d(32, 64, kernel_size=(5, 5), stride=(1, 1), padding=(2, 2))
+    (relu2): ReLU()
+    (avgPool1): AvgPool2d(kernel_size=2, stride=2, padding=0)
+    (conv3): Conv2d(64, 128, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+    (batchNorm1): BatchNorm2d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    (maxPool3): MaxPool2d(kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=False)
+    (conv4): Conv2d(128, 256, kernel_size=(5, 5), stride=(1, 1), padding=(2, 2))
+    (relu4): ReLU()
+    (flattern): Flatten(start_dim=1, end_dim=-1)
+    (fc1): Linear(in_features=4096, out_features=128, bias=True)
+    (relu5): ReLU()
+    (fc2): Linear(in_features=128, out_features=64, bias=True)
+    (relu6): ReLU()
+    (out): Linear(in_features=64, out_features=10, bias=True)
+  )
+)
+--------------------------------------------------------------------
+
+
+
+--------------------------------------------------------------------task3_model1_Mon_23_57
+Final validation accuracy 0.717199981212616
+Final train accuracy 0.8103333711624146
+Final test accuracy 0.7232999801635742
+Batch size: 50, Learning rate: 0.1
+Optimizer: Average SGD, weight decay = 0.001 
+Model1(
+  (model): Sequential(
+    (conv1): Conv2d(3, 32, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+    (relu1): ReLU()
+    (maxPool1): MaxPool2d(kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=False)
+    (conv2): Conv2d(32, 64, kernel_size=(5, 5), stride=(1, 1), padding=(2, 2))
+    (relu2): ReLU()
+    (avgPool1): AvgPool2d(kernel_size=2, stride=2, padding=0)
+    (conv3): Conv2d(64, 128, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+    (batchNorm1): BatchNorm2d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    (maxPool3): MaxPool2d(kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=False)
+    (conv4): Conv2d(128, 256, kernel_size=(5, 5), stride=(1, 1), padding=(2, 2))
+    (relu4): ReLU()
+    (flattern): Flatten(start_dim=1, end_dim=-1)
+    (fc1): Linear(in_features=4096, out_features=128, bias=True)
+    (relu5): ReLU()
+    (fc2): Linear(in_features=128, out_features=64, bias=True)
+    (relu6): ReLU()
+    (out): Linear(in_features=64, out_features=10, bias=True)
+  )
+)
+--------------------------------------------------------------------
+
+
+
+--------------------------------------------------------------------task3_model1_Tue_00_01
+Final validation accuracy 0.7849999666213989
+Final train accuracy 0.9222888946533203
+Final test accuracy 0.7811999917030334
+Batch size: 50, Learning rate: 0.02
+Optimizer: Average SGD, weight decay = 0.001 
+Model1(
+  (model): Sequential(
+    (conv1): Conv2d(3, 32, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+    (relu1): ReLU()
+    (maxPool1): MaxPool2d(kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=False)
+    (conv2): Conv2d(32, 64, kernel_size=(5, 5), stride=(1, 1), padding=(2, 2))
+    (relu2): ReLU()
+    (avgPool1): AvgPool2d(kernel_size=2, stride=2, padding=0)
+    (conv3): Conv2d(64, 128, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+    (batchNorm1): BatchNorm2d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    (maxPool3): MaxPool2d(kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=False)
+    (conv4): Conv2d(128, 256, kernel_size=(5, 5), stride=(1, 1), padding=(2, 2))
+    (relu4): ReLU()
+    (flattern): Flatten(start_dim=1, end_dim=-1)
+    (fc1): Linear(in_features=4096, out_features=128, bias=True)
+    (relu5): ReLU()
+    (fc2): Linear(in_features=128, out_features=64, bias=True)
+    (relu6): ReLU()
+    (out): Linear(in_features=64, out_features=10, bias=True)
+  )
+)
+--------------------------------------------------------------------
+
+
+
+--------------------------------------------------------------------task3_model1_Tue_00_06
+Final validation accuracy 0.761199951171875
+Final train accuracy 0.851711094379425
+Final test accuracy 0.7543999552726746
+Batch size: 50, Learning rate: 0.01
+Optimizer: Average SGD, weight decay = 0.001 
+Model1(
+  (model): Sequential(
+    (conv1): Conv2d(3, 32, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+    (relu1): ReLU()
+    (maxPool1): MaxPool2d(kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=False)
+    (conv2): Conv2d(32, 64, kernel_size=(5, 5), stride=(1, 1), padding=(2, 2))
+    (relu2): ReLU()
+    (avgPool1): AvgPool2d(kernel_size=2, stride=2, padding=0)
+    (conv3): Conv2d(64, 128, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+    (batchNorm1): BatchNorm2d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    (maxPool3): MaxPool2d(kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=False)
+    (conv4): Conv2d(128, 256, kernel_size=(5, 5), stride=(1, 1), padding=(2, 2))
+    (relu4): ReLU()
+    (flattern): Flatten(start_dim=1, end_dim=-1)
+    (fc1): Linear(in_features=4096, out_features=128, bias=True)
+    (relu5): ReLU()
+    (fc2): Linear(in_features=128, out_features=64, bias=True)
+    (relu6): ReLU()
+    (out): Linear(in_features=64, out_features=10, bias=True)
+  )
+)
+--------------------------------------------------------------------
+
+
+
+--------------------------------------------------------------------task3_model1_Tue_00_11
+Final validation accuracy 0.7103999853134155
+Final train accuracy 0.8424000144004822
+Final test accuracy 0.7012999653816223
+Batch size: 50, Learning rate: 0.175
+Optimizer: Average SGD, weight decay = 0.001 
+Model1(
+  (model): Sequential(
+    (conv1): Conv2d(3, 32, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+    (relu1): ReLU()
+    (maxPool1): MaxPool2d(kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=False)
+    (conv2): Conv2d(32, 64, kernel_size=(5, 5), stride=(1, 1), padding=(2, 2))
+    (relu2): ReLU()
+    (avgPool1): AvgPool2d(kernel_size=2, stride=2, padding=0)
+    (conv3): Conv2d(64, 128, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+    (batchNorm1): BatchNorm2d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    (maxPool3): MaxPool2d(kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=False)
+    (conv4): Conv2d(128, 256, kernel_size=(5, 5), stride=(1, 1), padding=(2, 2))
+    (relu4): ReLU()
+    (flattern): Flatten(start_dim=1, end_dim=-1)
+    (fc1): Linear(in_features=4096, out_features=128, bias=True)
+    (relu5): ReLU()
+    (fc2): Linear(in_features=128, out_features=64, bias=True)
+    (relu6): ReLU()
+    (out): Linear(in_features=64, out_features=10, bias=True)
+  )
+)
+--------------------------------------------------------------------
+
+
+
+--------------------------------------------------------------------task3_model1_Tue_00_19
+Final validation accuracy 0.7784000039100647
+Final train accuracy 0.9057999849319458
+Final test accuracy 0.7694999575614929
+Batch size: 50, Learning rate: 0.0175
+Optimizer: Average SGD, weight decay = 0.001 
+Model1(
+  (model): Sequential(
+    (conv1): Conv2d(3, 32, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+    (relu1): ReLU()
+    (maxPool1): MaxPool2d(kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=False)
+    (conv2): Conv2d(32, 64, kernel_size=(5, 5), stride=(1, 1), padding=(2, 2))
+    (relu2): ReLU()
+    (avgPool1): AvgPool2d(kernel_size=2, stride=2, padding=0)
+    (conv3): Conv2d(64, 128, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+    (batchNorm1): BatchNorm2d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    (maxPool3): MaxPool2d(kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=False)
+    (conv4): Conv2d(128, 256, kernel_size=(5, 5), stride=(1, 1), padding=(2, 2))
+    (relu4): ReLU()
+    (flattern): Flatten(start_dim=1, end_dim=-1)
+    (fc1): Linear(in_features=4096, out_features=128, bias=True)
+    (relu5): ReLU()
+    (fc2): Linear(in_features=128, out_features=64, bias=True)
+    (relu6): ReLU()
+    (out): Linear(in_features=64, out_features=10, bias=True)
+  )
+)
+--------------------------------------------------------------------
+
+
+
+--------------------------------------------------------------------task3_model1_Tue_00_26
+Final validation accuracy 0.7621999979019165
+Final train accuracy 0.9001555442810059
+Final test accuracy 0.7609999775886536
+Batch size: 50, Learning rate: 0.022
+Optimizer: Average SGD, weight decay = 0.001 
+Model1(
+  (model): Sequential(
+    (conv1): Conv2d(3, 32, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+    (relu1): ReLU()
+    (maxPool1): MaxPool2d(kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=False)
+    (conv2): Conv2d(32, 64, kernel_size=(5, 5), stride=(1, 1), padding=(2, 2))
+    (relu2): ReLU()
+    (avgPool1): AvgPool2d(kernel_size=2, stride=2, padding=0)
+    (conv3): Conv2d(64, 128, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+    (batchNorm1): BatchNorm2d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    (maxPool3): MaxPool2d(kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=False)
+    (conv4): Conv2d(128, 256, kernel_size=(5, 5), stride=(1, 1), padding=(2, 2))
+    (relu4): ReLU()
+    (flattern): Flatten(start_dim=1, end_dim=-1)
+    (fc1): Linear(in_features=4096, out_features=128, bias=True)
+    (relu5): ReLU()
+    (fc2): Linear(in_features=128, out_features=64, bias=True)
+    (relu6): ReLU()
+    (out): Linear(in_features=64, out_features=10, bias=True)
+  )
+)
+--------------------------------------------------------------------
+
+
+
+--------------------------------------------------------------------task3_model1_Tue_00_35
+Final validation accuracy 0.7849999666213989
+Final train accuracy 0.9222888946533203
+Final test accuracy 0.7811999917030334
+Batch size: 50, Learning rate: 0.02
+Optimizer: Average SGD, weight decay = 0.001 
+Model1(
+  (model): Sequential(
+    (conv1): Conv2d(3, 32, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+    (relu1): ReLU()
+    (maxPool1): MaxPool2d(kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=False)
+    (conv2): Conv2d(32, 64, kernel_size=(5, 5), stride=(1, 1), padding=(2, 2))
+    (relu2): ReLU()
+    (avgPool1): AvgPool2d(kernel_size=2, stride=2, padding=0)
+    (conv3): Conv2d(64, 128, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+    (batchNorm1): BatchNorm2d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    (maxPool3): MaxPool2d(kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=False)
+    (conv4): Conv2d(128, 256, kernel_size=(5, 5), stride=(1, 1), padding=(2, 2))
+    (relu4): ReLU()
+    (flattern): Flatten(start_dim=1, end_dim=-1)
+    (fc1): Linear(in_features=4096, out_features=128, bias=True)
+    (relu5): ReLU()
+    (fc2): Linear(in_features=128, out_features=64, bias=True)
+    (relu6): ReLU()
+    (out): Linear(in_features=64, out_features=10, bias=True)
+  )
+)
+--------------------------------------------------------------------
+
+
+
+--------------------------------------------------------------------task3_model1_Tue_17_50
+Final validation accuracy 0.7849999666213989
+Final train accuracy 0.9222888946533203
+Final test accuracy 0.7811999917030334
+Batch size: 50, Learning rate: 0.02
+Optimizer: Average SGD, weight decay = 0.001 
+Model1(
+  (model): Sequential(
+    (conv1): Conv2d(3, 32, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+    (relu1): ReLU()
+    (maxPool1): MaxPool2d(kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=False)
+    (conv2): Conv2d(32, 64, kernel_size=(5, 5), stride=(1, 1), padding=(2, 2))
+    (relu2): ReLU()
+    (avgPool1): AvgPool2d(kernel_size=2, stride=2, padding=0)
+    (conv3): Conv2d(64, 128, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+    (batchNorm1): BatchNorm2d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    (maxPool3): MaxPool2d(kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=False)
+    (conv4): Conv2d(128, 256, kernel_size=(5, 5), stride=(1, 1), padding=(2, 2))
+    (relu4): ReLU()
+    (flattern): Flatten(start_dim=1, end_dim=-1)
+    (fc1): Linear(in_features=4096, out_features=128, bias=True)
+    (relu5): ReLU()
+    (fc2): Linear(in_features=128, out_features=64, bias=True)
+    (relu6): ReLU()
+    (out): Linear(in_features=64, out_features=10, bias=True)
+  )
+)
+--------------------------------------------------------------------
+
+
+
+--------------------------------------------------------------------task3_model1_Tue_17_55
+Final validation accuracy 0.7849999666213989
+Final train accuracy 0.9222888946533203
+Final test accuracy 0.7811999917030334
+Batch size: 50, Learning rate: 0.02
+Optimizer: Average SGD, weight decay = 0.001 
+Model1(
+  (model): Sequential(
+    (conv1): Conv2d(3, 32, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+    (relu1): ReLU()
+    (maxPool1): MaxPool2d(kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=False)
+    (conv2): Conv2d(32, 64, kernel_size=(5, 5), stride=(1, 1), padding=(2, 2))
+    (relu2): ReLU()
+    (avgPool1): AvgPool2d(kernel_size=2, stride=2, padding=0)
+    (conv3): Conv2d(64, 128, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+    (batchNorm1): BatchNorm2d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    (maxPool3): MaxPool2d(kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=False)
+    (conv4): Conv2d(128, 256, kernel_size=(5, 5), stride=(1, 1), padding=(2, 2))
+    (relu4): ReLU()
+    (flattern): Flatten(start_dim=1, end_dim=-1)
+    (fc1): Linear(in_features=4096, out_features=128, bias=True)
+    (relu5): ReLU()
+    (fc2): Linear(in_features=128, out_features=64, bias=True)
+    (relu6): ReLU()
+    (out): Linear(in_features=64, out_features=10, bias=True)
+  )
+)
+--------------------------------------------------------------------
+
+
+
+--------------------------------------------------------------------task3_model1_Tue_18_02
+Final validation accuracy 0.7849999666213989
+Final train accuracy 0.9222888946533203
+Final test accuracy 0.7811999917030334
+Batch size: 50, Learning rate: 0.02
+Optimizer: Average SGD, weight decay = 0.001 
+Model1(
+  (model): Sequential(
+    (conv1): Conv2d(3, 32, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+    (relu1): ReLU()
+    (maxPool1): MaxPool2d(kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=False)
+    (conv2): Conv2d(32, 64, kernel_size=(5, 5), stride=(1, 1), padding=(2, 2))
+    (relu2): ReLU()
+    (avgPool1): AvgPool2d(kernel_size=2, stride=2, padding=0)
+    (conv3): Conv2d(64, 128, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+    (batchNorm1): BatchNorm2d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    (maxPool3): MaxPool2d(kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=False)
+    (conv4): Conv2d(128, 256, kernel_size=(5, 5), stride=(1, 1), padding=(2, 2))
+    (relu4): ReLU()
+    (flattern): Flatten(start_dim=1, end_dim=-1)
+    (fc1): Linear(in_features=4096, out_features=128, bias=True)
+    (relu5): ReLU()
+    (fc2): Linear(in_features=128, out_features=64, bias=True)
+    (relu6): ReLU()
+    (out): Linear(in_features=64, out_features=10, bias=True)
+  )
+)
+--------------------------------------------------------------------
+
+
+
+--------------------------------------------------------------------task3_model1_Tue_18_07
+Final validation accuracy 0.7849999666213989
+Final train accuracy 0.9222888946533203
+Final test accuracy 0.7811999917030334
+Batch size: 50, Learning rate: 0.02
+Optimizer: Average SGD, weight decay = 0.001 
+Model1(
+  (model): Sequential(
+    (conv1): Conv2d(3, 32, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+    (relu1): ReLU()
+    (maxPool1): MaxPool2d(kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=False)
+    (conv2): Conv2d(32, 64, kernel_size=(5, 5), stride=(1, 1), padding=(2, 2))
+    (relu2): ReLU()
+    (avgPool1): AvgPool2d(kernel_size=2, stride=2, padding=0)
+    (conv3): Conv2d(64, 128, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+    (batchNorm1): BatchNorm2d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    (maxPool3): MaxPool2d(kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=False)
+    (conv4): Conv2d(128, 256, kernel_size=(5, 5), stride=(1, 1), padding=(2, 2))
+    (relu4): ReLU()
+    (flattern): Flatten(start_dim=1, end_dim=-1)
+    (fc1): Linear(in_features=4096, out_features=128, bias=True)
+    (relu5): ReLU()
+    (fc2): Linear(in_features=128, out_features=64, bias=True)
+    (relu6): ReLU()
+    (out): Linear(in_features=64, out_features=10, bias=True)
+  )
+)
+--------------------------------------------------------------------
+
+
+
+--------------------------------------------------------------------task3_model1_Tue_18_37
+Final validation accuracy 0.7849999666213989
+Final train accuracy 0.9222888946533203
+Final test accuracy 0.7811999917030334
+Final train loss 0.23535297811031342
+Batch size: 50, Learning rate: 0.02
+Optimizer: Average SGD, weight decay = 0.001 
+Model1(
+  (model): Sequential(
+    (conv1): Conv2d(3, 32, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+    (relu1): ReLU()
+    (maxPool1): MaxPool2d(kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=False)
+    (conv2): Conv2d(32, 64, kernel_size=(5, 5), stride=(1, 1), padding=(2, 2))
+    (relu2): ReLU()
+    (avgPool1): AvgPool2d(kernel_size=2, stride=2, padding=0)
+    (conv3): Conv2d(64, 128, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+    (batchNorm1): BatchNorm2d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    (maxPool3): MaxPool2d(kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=False)
+    (conv4): Conv2d(128, 256, kernel_size=(5, 5), stride=(1, 1), padding=(2, 2))
+    (relu4): ReLU()
+    (flattern): Flatten(start_dim=1, end_dim=-1)
+    (fc1): Linear(in_features=4096, out_features=128, bias=True)
+    (relu5): ReLU()
+    (fc2): Linear(in_features=128, out_features=64, bias=True)
+    (relu6): ReLU()
+    (out): Linear(in_features=64, out_features=10, bias=True)
+  )
+)
+--------------------------------------------------------------------
+
+
+
+--------------------------------------------------------------------task3_model1_Tue_19_05
+Final validation accuracy 0.7849999666213989
+Final train accuracy 0.9222888946533203
+Final test accuracy 0.7811999917030334
+Final train loss 0.23535297811031342
+Batch size: 50, Learning rate: 0.02
+Optimizer: Average SGD, weight decay = 0.001 
+Model1(
+  (model): Sequential(
+    (conv1): Conv2d(3, 32, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+    (relu1): ReLU()
+    (maxPool1): MaxPool2d(kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=False)
+    (conv2): Conv2d(32, 64, kernel_size=(5, 5), stride=(1, 1), padding=(2, 2))
+    (relu2): ReLU()
+    (avgPool1): AvgPool2d(kernel_size=2, stride=2, padding=0)
+    (conv3): Conv2d(64, 128, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+    (batchNorm1): BatchNorm2d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    (maxPool3): MaxPool2d(kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=False)
+    (conv4): Conv2d(128, 256, kernel_size=(5, 5), stride=(1, 1), padding=(2, 2))
+    (relu4): ReLU()
+    (flattern): Flatten(start_dim=1, end_dim=-1)
+    (fc1): Linear(in_features=4096, out_features=128, bias=True)
+    (relu5): ReLU()
+    (fc2): Linear(in_features=128, out_features=64, bias=True)
+    (relu6): ReLU()
+    (out): Linear(in_features=64, out_features=10, bias=True)
+  )
+)
+--------------------------------------------------------------------
+
+
+
+--------------------------------------------------------------------task3_model1_Thu_11_16
+Final validation accuracy 0.7423999905586243
+Final train accuracy 0.8912888765335083
+Final test accuracy 0.7343999743461609
+Final train loss 0.32490074634552
+Batch size: 50, Learning rate: 0.02
+Optimizer: Average SGD, weight decay = 0.001 
+Model1(
+  (model): Sequential(
+    (conv1): Conv2d(3, 32, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+    (relu1): ReLU()
+    (maxPool1): MaxPool2d(kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=False)
+    (conv2): Conv2d(32, 64, kernel_size=(5, 5), stride=(1, 1), padding=(2, 2))
+    (relu2): ReLU()
+    (avgPool1): AvgPool2d(kernel_size=2, stride=2, padding=0)
+    (conv3): Conv2d(64, 128, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+    (batchNorm1): BatchNorm2d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    (maxPool3): MaxPool2d(kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=False)
+    (conv4): Conv2d(128, 256, kernel_size=(5, 5), stride=(1, 1), padding=(2, 2))
+    (relu4): ReLU()
+    (flattern): Flatten(start_dim=1, end_dim=-1)
+    (fc1): Linear(in_features=4096, out_features=128, bias=True)
+    (relu5): ReLU()
+    (fc2): Linear(in_features=128, out_features=64, bias=True)
+    (relu6): ReLU()
+    (out): Linear(in_features=64, out_features=10, bias=True)
+  )
+)
+--------------------------------------------------------------------
+
+

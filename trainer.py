@@ -1,4 +1,3 @@
-
 import torch
 import typing
 import time
@@ -35,6 +34,7 @@ def compute_loss_and_accuracy(
 
             # Compute Loss
             sum_loss  += loss_criterion(output_probs, Y_batch) # adding the loss for a batch to the total loss
+            
             # Compute Accuracy
             n_batches += 1
             n_img += X_batch.shape[0]
@@ -72,10 +72,21 @@ class Trainer:
         self.model = utils.to_cuda(self.model)
         print(self.model)
 
+        # ___________OPTIMIZERS_______________
         # Define our optimizer. SGD = Stochastich Gradient Descent
-        self.optimizer = torch.optim.SGD(self.model.parameters(),
-                                         self.learning_rate)
-
+        #self.optimizer = torch.optim.SGD(self.model.parameters(),
+        #                                 self.learning_rate)
+        
+        #Try with Adadelta optimizer:
+        # self.optimizer = torch.optim.Adadelta(self.model.parameters())
+        
+        # Averaged SGD:
+        # self.optimizer = torch.optim.ASGD(self.model.parameters(),
+        #                                  self.learning_rate, weight_decay=0.001)
+        #Adam
+        self.optimizer = torch.optim.Adam(self.model.parameters())
+        #______________________________________
+        
         # Load our dataset
         self.dataloader_train, self.dataloader_val, self.dataloader_test = dataloaders
 
@@ -233,3 +244,5 @@ class Trainer:
                 f"Could not load best checkpoint. Did not find under: {self.checkpoint_dir}")
             return
         self.model.load_state_dict(state_dict)
+
+

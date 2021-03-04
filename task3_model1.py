@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 from collections import OrderedDict
 import pathlib
 import matplotlib.pyplot as plt
@@ -7,10 +8,12 @@ from torch import nn
 from dataloaders import load_cifar10
 from trainer import Trainer, compute_loss_and_accuracy
 from datetime import datetime
-from torchsummary import summary
+import torch
+import torch.nn.functional as F
+#from torchsummary import summary
 
 class Model1(nn.Module):
-
+    
     def __init__(self,
                  image_channels,
                  num_classes):
@@ -20,24 +23,27 @@ class Model1(nn.Module):
                 image_channels. Number of color channels in image (3)
                 num_classes: Number of classes we want to predict (10)
         """
-        super(Model1, self).__init__()
+        super(Model1, self).__init__() # usikker på om exampleModel og self egentlig skal inn her
         # TODO: Implement this function (Task  2a)
-        num_filters = 64  # Set number of filters in first conv layer
+        num_filters = 32  # Set number of filters in first conv layer
         self.num_classes = num_classes
+        
+        # Define the convolutional layers
+        
         '''
             Differences from task 2 model:
-                - 3x3 filters instead of 5x5
-                    - padding of 1 instead of 2
-                - 64 filters in first layer instead of 32
-                - skip last maxpool, use stride 2 instead
-                - transforms
-                    - random brightness 0.2
-                    - randomperspective
+                - Conv1: kernel size 3, padding 1, from 5,2
+                - Conv3: kernel size 3, padding 1, from 5 and 2
+                - batch size 32 from 64
+                - num filters 32 from 64
+                - added conv4
+                - added relu4
         '''
+
         self.modelList = OrderedDict([
             ('conv1', nn.Conv2d(
                 in_channels=image_channels, 
-                out_channels=num_filters, 
+                out_channels=32, 
                 kernel_size=3, stride=1, padding=1
             )),
             ('relu1', nn.ReLU()),
@@ -46,38 +52,57 @@ class Model1(nn.Module):
                 stride=2
             )),
             ('conv2', nn.Conv2d(
-                in_channels=num_filters, 
-                out_channels=num_filters*2, 
-                kernel_size=3, stride=1, padding=1
+                in_channels=32, 
+                out_channels=64, 
+                kernel_size=5, stride=1, padding=2
             )),
+            # ('batchNorm1', nn.BatchNorm2d(64)),
             ('relu2', nn.ReLU()),
-            ('maxPool2', nn.MaxPool2d(
-                kernel_size=2,
-                stride=2
+            ('avgPool1', nn.AvgPool2d(
+                kernel_size=2
             )),
             ('conv3', nn.Conv2d(
-                in_channels=num_filters*2, 
-                out_channels=num_filters*4, 
-                kernel_size=3, stride=2, padding=1
+                in_channels=64, 
+                out_channels=128, 
+                kernel_size=3, stride=1, padding=1
             )),
-            ('relu3', nn.ReLU()),
+            ('batchNorm1', nn.BatchNorm2d(128)),
             ('maxPool3', nn.MaxPool2d(
                 kernel_size=2,
                 stride=2
             )),
-            ('flattern', nn.Flatten(start_dim=1 
-            )),
-            ('fc1', nn.Linear(
-                in_features=4*4*num_filters*4,
-                out_features=64
+            ('conv4', nn.Conv2d(
+                in_channels=128, 
+                out_channels=256, 
+                kernel_size=5, stride=1, padding=2
             )),
             ('relu4', nn.ReLU()),
+            ('flattern', nn.Flatten(start_dim=1 # kanskje?
+            )),
+            ('fc1', nn.Linear(
+                in_features=256*4*4,
+                out_features=128
+            )),
+            ('relu5', nn.ReLU()),
+             ('fc2', nn.Linear(
+                in_features=128,
+                out_features=64
+            )),
+            ('relu6', nn.ReLU()),
             ('out', nn.Linear(
                 in_features=64,
                 out_features=10
             ))            
         ])
         self.model = nn.Sequential(self.modelList)
+        
+        # The output of feature_extractor will be [batch_size, num_filters, 16, 16]
+        self.num_output_features = 32*32*32
+        # Initialize our last fully connected layer
+        # Inputs all extracted features from the convolutional layers
+        # Outputs num_classes predictions, 1 for each class.
+        # There is no need for softmax activation function, as this is
+        # included with nn.CrossEntropyLoss
 
 
     def forward(self, x):
@@ -109,6 +134,7 @@ def create_plots(trainer: Trainer, name: str, header: str):
     plt.subplot(1, 2, 2)
     plt.title("Accuracy")
     utils.plot_loss(trainer.validation_history["accuracy"], label="Validation Accuracy")
+    utils.plot_loss(trainer.test_history["accuracy"], label="Test accuracy")
     plt.legend()
     plt.savefig(plot_path.joinpath(f"{name}_plot.png"))
     plt.show()
@@ -119,9 +145,10 @@ if __name__ == "__main__":
     # You can try to change this and check if you still get the same result! 
     utils.set_seed(0)
     epochs = 10
-    batch_size = 64
-    learning_rate = 5e-2
+    batch_size = 50
+    learning_rate = 0.02
     early_stop_count = 4
+    Optimizer = "Average SGD, weight decay = 0.001"
     dataloaders = load_cifar10(batch_size, task="3_model1") # using the model1 transforms
     model = Model1(image_channels=3, num_classes=10)
     trainer = Trainer(
@@ -138,9 +165,10 @@ if __name__ == "__main__":
     final_val_acc = list(trainer.validation_history["accuracy"].values())[-1]
     final_test_acc = list(trainer.test_history["accuracy"].values())[-1]
     final_train_acc = list(trainer.train_history["accuracy"].values())[-1]
-    # print(f'Final validation accuracy {final_val_acc}')
-    # print(f'Final train accuracy {final_train_acc}')
-    # print(f'Final test accuracy {final_test_acc}')
+    final_train_loss = list(trainer.train_history["loss"].values())[-1]
+    print(f'Final validation accuracy {final_val_acc}')
+    print(f'Final train accuracy {final_train_acc}')
+    print(f'Final test accuracy {final_test_acc}')
     
     plotName = "task3_model1_" + datetime.now().strftime("%a_%H_%M")
     header = "Task 3, Model 1"
@@ -151,7 +179,14 @@ if __name__ == "__main__":
         f'Final validation accuracy {final_val_acc}\n' + \
         f'Final train accuracy {final_train_acc}\n' + \
         f'Final test accuracy {final_test_acc}\n' +\
+        f'Final train loss {final_train_loss}\n' +\
+        f'Batch size: {batch_size}, Learning rate: {learning_rate}\n' +\
+        f'Optimizer: {Optimizer} \n' +\
         str(model) + \
         "\n--------------------------------------------------------------------\n\n\n")
     f.close()
     create_plots(trainer, plotName, header)
+
+
+
+

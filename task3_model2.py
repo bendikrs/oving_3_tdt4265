@@ -1,12 +1,14 @@
 from collections import OrderedDict
 import pathlib
 import matplotlib.pyplot as plt
+from torch.utils import data
 import utils
 from torch import nn
 from dataloaders import load_cifar10
 from trainer import Trainer, compute_loss_and_accuracy
 from datetime import datetime
-from torchsummary import summary
+import torch
+#from torchsummary import summary
 
 class Model2(nn.Module):
 
@@ -26,13 +28,15 @@ class Model2(nn.Module):
 
         '''
             Differences from task 2 model:
-                - 
+                - Added som relu and conv
+                - Added a batchNorm
+                - Some difference in in/out channels
         '''
         self.modelList = OrderedDict([
             ('conv1', nn.Conv2d(
                 in_channels=image_channels, 
-                out_channels=num_filters, 
-                kernel_size=5, stride=1, padding=2
+                out_channels=32, 
+                kernel_size=3, stride=1, padding=1
             )),
             ('relu1', nn.ReLU()),
             ('maxPool1', nn.MaxPool2d(
@@ -40,32 +44,42 @@ class Model2(nn.Module):
                 stride=2
             )),
             ('conv2', nn.Conv2d(
-                in_channels=num_filters, 
-                out_channels=num_filters*2, 
+                in_channels=32, 
+                out_channels=64, 
                 kernel_size=5, stride=1, padding=2
             )),
             ('relu2', nn.ReLU()),
-            ('maxPool2', nn.MaxPool2d(
-                kernel_size=2,
-                stride=2
+            ('avgPool1', nn.AvgPool2d(
+                kernel_size=2
             )),
             ('conv3', nn.Conv2d(
-                in_channels=num_filters*2, 
-                out_channels=num_filters*4, 
-                kernel_size=5, stride=1, padding=2
+                in_channels=64, 
+                out_channels=128, 
+                kernel_size=3, stride=1, padding=1
             )),
-            ('relu3', nn.ReLU()),
+            ('batchNorm1', nn.BatchNorm2d(128)),
             ('maxPool3', nn.MaxPool2d(
                 kernel_size=2,
                 stride=2
             )),
-            ('flattern', nn.Flatten(start_dim=1
-            )),
-            ('fc1', nn.Linear(
-                in_features=4*4*128,
-                out_features=64
+            ('conv4', nn.Conv2d(
+                in_channels=128, 
+                out_channels=256, 
+                kernel_size=5, stride=1, padding=2
             )),
             ('relu4', nn.ReLU()),
+            ('flattern', nn.Flatten(start_dim=1 # kanskje?
+            )),
+            ('fc1', nn.Linear(
+                in_features=256*4*4,
+                out_features=128
+            )),
+            ('relu5', nn.ReLU()),
+             ('fc2', nn.Linear(
+                in_features=128,
+                out_features=64
+            )),
+            ('relu6', nn.ReLU()),
             ('out', nn.Linear(
                 in_features=64,
                 out_features=10
@@ -132,9 +146,9 @@ if __name__ == "__main__":
     final_val_acc = list(trainer.validation_history["accuracy"].values())[-1]
     final_test_acc = list(trainer.test_history["accuracy"].values())[-1]
     final_train_acc = list(trainer.train_history["accuracy"].values())[-1]
-    # print(f'Final validation accuracy {final_val_acc}')
-    # print(f'Final train accuracy {final_train_acc}')
-    # print(f'Final test accuracy {final_test_acc}')
+    print(f'Final validation accuracy {final_val_acc}')
+    print(f'Final train accuracy {final_train_acc}')
+    print(f'Final test accuracy {final_test_acc}')
     
     plotName = "task3_model2_" + datetime.now().strftime("%a_%H_%M")
     header = "Task 3, Model 2"
@@ -145,7 +159,10 @@ if __name__ == "__main__":
         f'Final validation accuracy {final_val_acc}\n' + \
         f'Final train accuracy {final_train_acc}\n' + \
         f'Final test accuracy {final_test_acc}\n' +\
+        f'Batch size: {batch_size}, Learning rate: {learning_rate}\n' +\
         str(model) + \
         "\n--------------------------------------------------------------------\n\n\n")
     f.close()
     create_plots(trainer, plotName, header)
+
+
