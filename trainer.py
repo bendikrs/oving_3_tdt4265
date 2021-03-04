@@ -8,7 +8,7 @@ import pathlib
 from torch import nn
 
 def weights_init(m): # litt usikker på den her..
-    if isinstance(m, nn.Conv2d):
+    if isinstance(m, (nn.Conv2d, nn.Linear)):
         torch.nn.init.xavier_uniform_(m.weight)
         torch.nn.init.zeros_(m.bias)
 

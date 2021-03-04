@@ -103,7 +103,7 @@ class Model1(nn.Module):
             ))            
         ])
         self.model = nn.Sequential(self.modelList)
-        # self.model.apply(weights_init)
+        self.model.apply(weights_init)
 
         # The output of feature_extractor will be [batch_size, num_filters, 16, 16]
         self.num_output_features = 32*32*32
@@ -154,7 +154,7 @@ if __name__ == "__main__":
     utils.set_seed(0)
     epochs = 10
     batch_size = 50
-    learning_rate = 0.03
+    learning_rate = 0.02
     early_stop_count = 4
     Optimizer = "Average SGD, weight decay = 0.001"
     dataloaders = load_cifar10(batch_size, task="3_model1") # using the model1 transforms
@@ -169,7 +169,49 @@ if __name__ == "__main__":
     )
     trainer.train()
 
+    '''
+    # Comparison model for 3 d) -----
+    epochs = 10
+    batch_size = 50
+    learning_rate = 0.1
+    early_stop_count = 100
+    Optimizer = "Average SGD, weight decay = 0.001"
+    dataloaders = load_cifar10(batch_size, task="3_model1") # using the model1 transforms
+    badmodel = Model1(image_channels=3, num_classes=10)
+    badtrainer = Trainer(
+        batch_size,
+        learning_rate,
+        early_stop_count,
+        epochs,
+        badmodel,
+        dataloaders
+    )
+    badtrainer.train()
     
+    # Comparison plot
+    plot_path = pathlib.Path("plots")
+    plot_path.mkdir(exist_ok=True)
+    # Save plots and show them
+    plt.figure(figsize=(20, 8))
+    plt.suptitle("Comparison task 3 d) - Effect of lowering lr", fontsize = 14) # Added header to plots
+    plt.subplot(1, 2, 1)
+    plt.title("Cross Entropy Loss")
+    utils.plot_loss(trainer.train_history["loss"], label="Training loss - low lr", npoints_to_average=10)
+    utils.plot_loss(trainer.validation_history["loss"], label="Validation loss - low lr")
+    utils.plot_loss(badtrainer.train_history["loss"], label="Training loss - high lr", npoints_to_average=10)
+    utils.plot_loss(badtrainer.validation_history["loss"], label="Validation loss - high lr")
+    plt.legend()
+    plt.subplot(1, 2, 2)
+    plt.title("Accuracy")
+    utils.plot_loss(trainer.validation_history["accuracy"], label="Validation Accuracy - low lr")
+    utils.plot_loss(badtrainer.validation_history["accuracy"], label="Validation Accuracy - high lr")
+    plt.legend()
+    plt.savefig(plot_path.joinpath("comparison_3d.png"))
+    plt.show()
+
+    # ------
+    '''
+  
     final_val_acc = list(trainer.validation_history["accuracy"].values())[-1]
     final_test_acc = list(trainer.test_history["accuracy"].values())[-1]
     final_train_acc = list(trainer.train_history["accuracy"].values())[-1]
