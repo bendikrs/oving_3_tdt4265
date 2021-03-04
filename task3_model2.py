@@ -35,7 +35,7 @@ class Model2(nn.Module):
         self.modelList = OrderedDict([
             ('conv1', nn.Conv2d(
                 in_channels=image_channels, 
-                out_channels=32, 
+                out_channels=64, 
                 kernel_size=3, stride=1, padding=1
             )),
             ('relu1', nn.ReLU()),
@@ -44,8 +44,8 @@ class Model2(nn.Module):
                 stride=2
             )),
             ('conv2', nn.Conv2d(
-                in_channels=32, 
-                out_channels=64, 
+                in_channels=64, 
+                out_channels=128, 
                 kernel_size=5, stride=1, padding=2
             )),
             ('relu2', nn.ReLU()),
@@ -54,8 +54,8 @@ class Model2(nn.Module):
                 stride=2
             )),
             ('conv3', nn.Conv2d(
-                in_channels=64, 
-                out_channels=128, 
+                in_channels=128, 
+                out_channels=256, 
                 kernel_size=3, stride=1, padding=1
             )),
             ('relu3', nn.ReLU()),
@@ -63,12 +63,12 @@ class Model2(nn.Module):
                 kernel_size=2,
                 stride=2
             )),
-            ('conv4', nn.Conv2d(
-                in_channels=128, 
-                out_channels=256, 
-                kernel_size=5, stride=1, padding=2
-            )),
-            ('relu4', nn.ReLU()),
+            # ('conv4', nn.Conv2d(
+            #     in_channels=128, 
+            #     out_channels=256, 
+            #     kernel_size=5, stride=1, padding=2
+            # )),
+            # ('relu4', nn.ReLU()),
             ('flattern', nn.Flatten(start_dim=1
             )),
             ('fc1', nn.Linear(
@@ -76,13 +76,13 @@ class Model2(nn.Module):
                 out_features=128
             )),
             ('relu5', nn.ReLU()),
-             ('fc2', nn.Linear(
-                in_features=128,
-                out_features=64
-            )),
-            ('relu6', nn.ReLU()),
+            #  ('fc2', nn.Linear(
+            #     in_features=128,
+            #     out_features=64
+            # )),
+            # ('relu6', nn.ReLU()),
             ('out', nn.Linear(
-                in_features=64,
+                in_features=128,
                 out_features=10
             ))            
         ])

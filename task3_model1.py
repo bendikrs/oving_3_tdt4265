@@ -154,7 +154,7 @@ if __name__ == "__main__":
     utils.set_seed(0)
     epochs = 10
     batch_size = 50
-    learning_rate = 0.02
+    learning_rate = 0.03
     early_stop_count = 4
     Optimizer = "Average SGD, weight decay = 0.001"
     dataloaders = load_cifar10(batch_size, task="3_model1") # using the model1 transforms
