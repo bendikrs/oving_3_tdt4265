@@ -18,7 +18,7 @@ class ExampleModel(nn.Module):
                 image_channels. Number of color channels in image (3)
                 num_classes: Number of classes we want to predict (10)
         """
-        super(ExampleModel, self).__init__() # usikker på om exampleModel og self egentlig skal inn her
+        super(ExampleModel, self).__init__()
         # TODO: Implement this function (Task  2a)
         num_filters = 32  # Set number of filters in first conv layer
         self.num_classes = num_classes
@@ -55,7 +55,7 @@ class ExampleModel(nn.Module):
                 kernel_size=2,
                 stride=2
             )),
-            ('flattern', nn.Flatten(start_dim=1 # kanskje?
+            ('flattern', nn.Flatten(start_dim=1
             )),
             ('fc1', nn.Linear(
                 in_features=4*4*128,

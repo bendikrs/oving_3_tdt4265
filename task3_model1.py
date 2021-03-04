@@ -22,7 +22,7 @@ class Model1(nn.Module):
                 image_channels. Number of color channels in image (3)
                 num_classes: Number of classes we want to predict (10)
         """
-        super(Model1, self).__init__() # usikker på om exampleModel og self egentlig skal inn her
+        super(Model1, self).__init__()
         # TODO: Implement this function (Task  2a)
         num_filters = 32  # Set number of filters in first conv layer
         self.num_classes = num_classes
@@ -33,10 +33,9 @@ class Model1(nn.Module):
             Differences from task 2 model:
                 - Conv1: kernel size 3, padding 1, from 5,2
                 - Conv3: kernel size 3, padding 1, from 5 and 2
-                - batch size 32 from 64
-                - num filters 32 from 64
                 - added conv4
                 - added relu4
+                - xavier weight init
         '''
 
         self.modelList = OrderedDict([
@@ -83,7 +82,7 @@ class Model1(nn.Module):
             #('batchNorm4', nn.BatchNorm2d(256)),
             #('dropout4', nn.Dropout2d(0.1)),
             ('relu4', nn.ReLU()),
-            ('flattern', nn.Flatten(start_dim=1 # kanskje?
+            ('flattern', nn.Flatten(start_dim=1
             )),
             ('fc1', nn.Linear(
                 in_features=256*4*4,

@@ -3,7 +3,7 @@ from torch.utils.data.sampler import SubsetRandomSampler
 import torch
 import typing
 import numpy as np
-from torchvision.transforms.transforms import RandomPerspective, RandomVerticalFlip
+from torchvision.transforms.transforms import RandomCrop, RandomPerspective, RandomVerticalFlip
 np.random.seed(0)
 
 mean = (0.5, 0.5, 0.5)
@@ -27,7 +27,7 @@ def load_cifar10(batch_size: int, validation_fraction: float = 0.1, task = "2"
         transform_train = transforms.Compose([
             # transforms.ColorJitter(brightness=0.2),
             # transforms.RandomPerspective(),
-            # transforms.
+            # transforms.RandomCrop(),
             transforms.ToTensor(),
             transforms.Normalize(mean, std)
         ])

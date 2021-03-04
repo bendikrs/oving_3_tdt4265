@@ -87,7 +87,7 @@ class Trainer:
         
         # Averaged SGD:
         self.optimizer = torch.optim.ASGD(self.model.parameters(),
-                                          self.learning_rate, weight_decay=0.001)
+                                          self.learning_rate, weight_decay=0.002)
 
         # Adam:
         # self.optimizer = torch.optim.Adam(self.model.parameters(),
@@ -200,12 +200,12 @@ class Trainer:
         predictions = self.model(X_batch)
         # Compute the cross entropy loss for the batch
         loss = self.loss_criterion(predictions, Y_batch)
+        self.optimizer.zero_grad()
         # Backpropagation
         loss.backward()
         # Gradient descent step
         self.optimizer.step()
         # Reset all computed gradients to 0
-        self.optimizer.zero_grad()
 
         return loss.detach().cpu().item()
 

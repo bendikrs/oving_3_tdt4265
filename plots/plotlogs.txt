@@ -625,3 +625,652 @@ Model1(
 --------------------------------------------------------------------
 
 
+
+--------------------------------------------------------------------task3_model1_test  Thu_15_30
+Final validation accuracy 0.7928000092506409
+Final train accuracy 0.8853777647018433
+Final test accuracy 0.7983999848365784
+Final train loss 0.35005056858062744
+Batch size: 50, Learning rate: 0.02
+Optimizer: Average SGD, weight decay = 0.002 
+Model1_test(
+  (model): Sequential(
+    (conv1): Conv2d(3, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+    (relu1): ReLU()
+    (maxPool1): MaxPool2d(kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=False)
+    (conv2): Conv2d(64, 128, kernel_size=(5, 5), stride=(1, 1), padding=(2, 2))
+    (dropout1): Dropout2d(p=0.15, inplace=False)
+    (relu2): ReLU()
+    (avgPool1): AvgPool2d(kernel_size=2, stride=2, padding=0)
+    (conv3): Conv2d(128, 256, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+    (batchNorm1): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    (maxPool3): MaxPool2d(kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=False)
+    (conv4): Conv2d(256, 512, kernel_size=(5, 5), stride=(1, 1), padding=(2, 2))
+    (relu4): ReLU()
+    (flattern): Flatten(start_dim=1, end_dim=-1)
+    (dropout2): Dropout2d(p=0.5, inplace=False)
+    (fc1): Linear(in_features=8192, out_features=128, bias=True)
+    (relu5): ReLU()
+    (relu6): ReLU()
+    (out): Linear(in_features=128, out_features=10, bias=True)
+  )
+)
+--------------------------------------------------------------------
+
+
+
+--------------------------------------------------------------------task3_model1_test  Thu_15_46
+Final validation accuracy 0.7897999882698059
+Final train accuracy 0.8965555429458618
+Final test accuracy 0.7917999625205994
+Final train loss 0.3408004641532898
+Batch size: 50, Learning rate: 0.02
+Optimizer: Average SGD, weight decay = 0.002 
+Model1_test(
+  (model): Sequential(
+    (conv1): Conv2d(3, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+    (batchNorm1): BatchNorm2d(64, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    (relu1): ReLU()
+    (maxPool1): MaxPool2d(kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=False)
+    (conv2): Conv2d(64, 128, kernel_size=(5, 5), stride=(1, 1), padding=(2, 2))
+    (batchNorm2): BatchNorm2d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    (dropout1): Dropout2d(p=0.15, inplace=False)
+    (relu2): ReLU()
+    (avgPool1): AvgPool2d(kernel_size=2, stride=2, padding=0)
+    (conv3): Conv2d(128, 256, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+    (batchNorm3): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    (maxPool3): MaxPool2d(kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=False)
+    (conv4): Conv2d(256, 512, kernel_size=(5, 5), stride=(1, 1), padding=(2, 2))
+    (batchNorm4): BatchNorm2d(512, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    (relu4): ReLU()
+    (flattern): Flatten(start_dim=1, end_dim=-1)
+    (dropout2): Dropout2d(p=0.5, inplace=False)
+    (fc1): Linear(in_features=8192, out_features=128, bias=True)
+    (relu5): ReLU()
+    (batchNorm5): BatchNorm1d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    (relu6): ReLU()
+    (out): Linear(in_features=128, out_features=10, bias=True)
+  )
+)
+--------------------------------------------------------------------
+
+
+
+--------------------------------------------------------------------task3_model1_test  Thu_15_54
+Final validation accuracy 0.7811999917030334
+Final train accuracy 0.8808222413063049
+Final test accuracy 0.7787999510765076
+Final train loss 0.39769068360328674
+Batch size: 50, Learning rate: 0.02
+Optimizer: Average SGD, weight decay = 0.002 
+Model1_test(
+  (model): Sequential(
+    (conv1): Conv2d(3, 64, kernel_size=(7, 7), stride=(1, 1), padding=(3, 3))
+    (batchNorm1): BatchNorm2d(64, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    (relu1): ReLU()
+    (maxPool1): MaxPool2d(kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=False)
+    (conv2): Conv2d(64, 128, kernel_size=(5, 5), stride=(1, 1), padding=(2, 2))
+    (batchNorm2): BatchNorm2d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    (dropout1): Dropout2d(p=0.15, inplace=False)
+    (relu2): ReLU()
+    (avgPool1): AvgPool2d(kernel_size=2, stride=2, padding=0)
+    (conv3): Conv2d(128, 256, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+    (batchNorm3): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    (maxPool3): MaxPool2d(kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=False)
+    (conv4): Conv2d(256, 512, kernel_size=(5, 5), stride=(1, 1), padding=(2, 2))
+    (batchNorm4): BatchNorm2d(512, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    (relu4): ReLU()
+    (flattern): Flatten(start_dim=1, end_dim=-1)
+    (dropout2): Dropout2d(p=0.5, inplace=False)
+    (fc1): Linear(in_features=8192, out_features=128, bias=True)
+    (relu5): ReLU()
+    (batchNorm5): BatchNorm1d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    (relu6): ReLU()
+    (out): Linear(in_features=128, out_features=10, bias=True)
+  )
+)
+--------------------------------------------------------------------
+
+
+
+--------------------------------------------------------------------task3_model1_test  Thu_16_00
+Final validation accuracy 0.7631999850273132
+Final train accuracy 0.8501555919647217
+Final test accuracy 0.7612999677658081
+Final train loss 0.4562721252441406
+Batch size: 50, Learning rate: 0.05
+Optimizer: Average SGD, weight decay = 0.002 
+Model1_test(
+  (model): Sequential(
+    (conv1): Conv2d(3, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+    (batchNorm1): BatchNorm2d(64, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    (relu1): ReLU()
+    (maxPool1): MaxPool2d(kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=False)
+    (conv2): Conv2d(64, 128, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+    (batchNorm2): BatchNorm2d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    (dropout1): Dropout2d(p=0.15, inplace=False)
+    (relu2): ReLU()
+    (avgPool1): AvgPool2d(kernel_size=2, stride=2, padding=0)
+    (conv3): Conv2d(128, 256, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+    (batchNorm3): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    (maxPool3): MaxPool2d(kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=False)
+    (conv4): Conv2d(256, 512, kernel_size=(5, 5), stride=(1, 1), padding=(2, 2))
+    (batchNorm4): BatchNorm2d(512, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    (relu4): ReLU()
+    (flattern): Flatten(start_dim=1, end_dim=-1)
+    (dropout2): Dropout2d(p=0.5, inplace=False)
+    (fc1): Linear(in_features=8192, out_features=128, bias=True)
+    (relu5): ReLU()
+    (batchNorm5): BatchNorm1d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    (relu6): ReLU()
+    (out): Linear(in_features=128, out_features=10, bias=True)
+  )
+)
+--------------------------------------------------------------------
+
+
+
+--------------------------------------------------------------------task3_model1_best  Thu_16_11
+Final validation accuracy 0.7899999618530273
+Final train accuracy 0.8681777715682983
+Final test accuracy 0.7831999659538269
+Final train loss 0.4075179398059845
+Batch size: 50, Learning rate: 0.04
+Optimizer: Average SGD, weight decay = 0.002 
+Model1_test(
+  (model): Sequential(
+    (conv1): Conv2d(3, 64, kernel_size=(5, 5), stride=(1, 1), padding=(2, 2))
+    (batchNorm1): BatchNorm2d(64, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    (relu1): ReLU()
+    (maxPool1): MaxPool2d(kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=False)
+    (conv2): Conv2d(64, 128, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+    (batchNorm2): BatchNorm2d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    (dropout1): Dropout2d(p=0.15, inplace=False)
+    (relu2): ReLU()
+    (avgPool1): AvgPool2d(kernel_size=2, stride=2, padding=0)
+    (conv3): Conv2d(128, 256, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+    (batchNorm3): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    (maxPool3): MaxPool2d(kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=False)
+    (dropout2): Dropout2d(p=0.2, inplace=False)
+    (conv4): Conv2d(256, 512, kernel_size=(5, 5), stride=(1, 1), padding=(2, 2))
+    (batchNorm4): BatchNorm2d(512, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    (relu4): ReLU()
+    (flattern): Flatten(start_dim=1, end_dim=-1)
+    (dropout3): Dropout2d(p=0.5, inplace=False)
+    (fc1): Linear(in_features=8192, out_features=128, bias=True)
+    (relu5): ReLU()
+    (batchNorm5): BatchNorm1d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    (relu6): ReLU()
+    (out): Linear(in_features=128, out_features=10, bias=True)
+  )
+)
+--------------------------------------------------------------------
+
+
+
+--------------------------------------------------------------------task3_model1_best  Thu_16_18
+Final validation accuracy 0.7879999876022339
+Final train accuracy 0.8633111119270325
+Final test accuracy 0.7798999547958374
+Final train loss 0.42085587978363037
+Batch size: 50, Learning rate: 0.03
+Optimizer: Average SGD, weight decay = 0.002 
+Model1_test(
+  (model): Sequential(
+    (conv1): Conv2d(3, 64, kernel_size=(5, 5), stride=(1, 1), padding=(2, 2))
+    (batchNorm1): BatchNorm2d(64, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    (relu1): ReLU()
+    (maxPool1): MaxPool2d(kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=False)
+    (conv2): Conv2d(64, 128, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+    (batchNorm2): BatchNorm2d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    (dropout1): Dropout2d(p=0.15, inplace=False)
+    (relu2): ReLU()
+    (avgPool1): AvgPool2d(kernel_size=2, stride=2, padding=0)
+    (conv3): Conv2d(128, 256, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+    (batchNorm3): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    (maxPool3): MaxPool2d(kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=False)
+    (dropout2): Dropout2d(p=0.2, inplace=False)
+    (conv4): Conv2d(256, 512, kernel_size=(5, 5), stride=(1, 1), padding=(2, 2))
+    (batchNorm4): BatchNorm2d(512, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    (relu4): ReLU()
+    (flattern): Flatten(start_dim=1, end_dim=-1)
+    (dropout3): Dropout2d(p=0.5, inplace=False)
+    (fc1): Linear(in_features=8192, out_features=128, bias=True)
+    (relu5): ReLU()
+    (batchNorm5): BatchNorm1d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    (relu6): ReLU()
+    (out): Linear(in_features=128, out_features=10, bias=True)
+  )
+)
+--------------------------------------------------------------------
+
+
+
+--------------------------------------------------------------------task3_model1_best  Thu_16_25
+Final validation accuracy 0.7595999836921692
+Final train accuracy 0.8230888843536377
+Final test accuracy 0.7613999843597412
+Final train loss 0.5236926078796387
+Batch size: 50, Learning rate: 0.03
+Optimizer: Average SGD, weight decay = 0.002 
+Model1_test(
+  (model): Sequential(
+    (conv1): Conv2d(3, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+    (batchNorm1): BatchNorm2d(64, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    (relu1): ReLU()
+    (maxPool1): MaxPool2d(kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=False)
+    (conv2): Conv2d(64, 128, kernel_size=(5, 5), stride=(1, 1), padding=(2, 2))
+    (batchNorm2): BatchNorm2d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    (dropout1): Dropout2d(p=0.15, inplace=False)
+    (relu2): ReLU()
+    (avgPool1): AvgPool2d(kernel_size=2, stride=2, padding=0)
+    (conv3): Conv2d(128, 256, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+    (batchNorm3): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    (dropout2): Dropout2d(p=0.15, inplace=False)
+    (maxPool3): MaxPool2d(kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=False)
+    (conv4): Conv2d(256, 512, kernel_size=(5, 5), stride=(1, 1), padding=(2, 2))
+    (batchNorm4): BatchNorm2d(512, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    (dropout3): Dropout2d(p=0.5, inplace=False)
+    (relu4): ReLU()
+    (flattern): Flatten(start_dim=1, end_dim=-1)
+    (fc1): Linear(in_features=8192, out_features=128, bias=True)
+    (relu5): ReLU()
+    (batchNorm5): BatchNorm1d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    (relu6): ReLU()
+    (out): Linear(in_features=128, out_features=10, bias=True)
+  )
+)
+--------------------------------------------------------------------
+
+
+
+--------------------------------------------------------------------task3_model1_test  Thu_16_33
+Final validation accuracy 0.793999969959259
+Final train accuracy 0.8894888758659363
+Final test accuracy 0.7886999845504761
+Final train loss 0.34973132610321045
+Batch size: 50, Learning rate: 0.03
+Optimizer: Average SGD, weight decay = 0.002 
+Model1_test(
+  (model): Sequential(
+    (conv1): Conv2d(3, 64, kernel_size=(5, 5), stride=(1, 1), padding=(2, 2))
+    (batchNorm1): BatchNorm2d(64, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    (relu1): ReLU()
+    (maxPool1): MaxPool2d(kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=False)
+    (conv2): Conv2d(64, 128, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+    (batchNorm2): BatchNorm2d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    (dropout1): Dropout2d(p=0.15, inplace=False)
+    (relu2): ReLU()
+    (avgPool1): AvgPool2d(kernel_size=2, stride=2, padding=0)
+    (conv3): Conv2d(128, 256, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+    (batchNorm3): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    (maxPool3): MaxPool2d(kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=False)
+    (conv4): Conv2d(256, 512, kernel_size=(5, 5), stride=(1, 1), padding=(2, 2))
+    (batchNorm4): BatchNorm2d(512, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    (relu4): ReLU()
+    (flattern): Flatten(start_dim=1, end_dim=-1)
+    (dropout2): Dropout(p=0.5, inplace=False)
+    (fc1): Linear(in_features=8192, out_features=128, bias=True)
+    (relu5): ReLU()
+    (batchNorm5): BatchNorm1d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    (relu6): ReLU()
+    (out): Linear(in_features=128, out_features=10, bias=True)
+  )
+)
+--------------------------------------------------------------------
+
+
+
+--------------------------------------------------------------------task3_model1_test  Thu_16_40
+Final validation accuracy 0.7888000011444092
+Final train accuracy 0.8720889091491699
+Final test accuracy 0.7849999666213989
+Final train loss 0.40549686551094055
+Batch size: 50, Learning rate: 0.03
+Optimizer: Average SGD, weight decay = 0.002 
+Model1_test(
+  (model): Sequential(
+    (conv1): Conv2d(3, 64, kernel_size=(5, 5), stride=(1, 1), padding=(2, 2))
+    (batchNorm1): BatchNorm2d(64, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    (relu1): ReLU()
+    (maxPool1): MaxPool2d(kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=False)
+    (conv2): Conv2d(64, 128, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+    (batchNorm2): BatchNorm2d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    (dropout1): Dropout2d(p=0.15, inplace=False)
+    (relu2): ReLU()
+    (avgPool1): AvgPool2d(kernel_size=2, stride=2, padding=0)
+    (conv3): Conv2d(128, 256, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+    (batchNorm3): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    (maxPool3): MaxPool2d(kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=False)
+    (conv4): Conv2d(256, 256, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+    (batchNorm4): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    (relu4): ReLU()
+    (flattern): Flatten(start_dim=1, end_dim=-1)
+    (dropout2): Dropout(p=0.5, inplace=False)
+    (fc1): Linear(in_features=4096, out_features=128, bias=True)
+    (relu5): ReLU()
+    (batchNorm5): BatchNorm1d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    (relu6): ReLU()
+    (out): Linear(in_features=128, out_features=10, bias=True)
+  )
+)
+--------------------------------------------------------------------
+
+
+
+--------------------------------------------------------------------task3_model1_test  Thu_16_47
+Final validation accuracy 0.8037999868392944
+Final train accuracy 0.8863999843597412
+Final test accuracy 0.795699954032898
+Final train loss 0.34397491812705994
+Batch size: 50, Learning rate: 0.03
+Optimizer: Average SGD, weight decay = 0.002 
+Model1_test(
+  (model): Sequential(
+    (conv1): Conv2d(3, 64, kernel_size=(5, 5), stride=(1, 1), padding=(2, 2))
+    (batchNorm1): BatchNorm2d(64, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    (relu1): ReLU()
+    (maxPool1): MaxPool2d(kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=False)
+    (conv2): Conv2d(64, 128, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+    (batchNorm2): BatchNorm2d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    (dropout1): Dropout2d(p=0.15, inplace=False)
+    (relu2): ReLU()
+    (avgPool1): AvgPool2d(kernel_size=2, stride=2, padding=0)
+    (conv3): Conv2d(128, 256, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+    (batchNorm3): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    (maxPool3): MaxPool2d(kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=False)
+    (relu3): ReLU()
+    (conv4): Conv2d(256, 512, kernel_size=(5, 5), stride=(1, 1), padding=(2, 2))
+    (batchNorm4): BatchNorm2d(512, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    (relu4): ReLU()
+    (flattern): Flatten(start_dim=1, end_dim=-1)
+    (dropout2): Dropout(p=0.5, inplace=False)
+    (fc1): Linear(in_features=8192, out_features=128, bias=True)
+    (relu5): ReLU()
+    (batchNorm5): BatchNorm1d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    (fc2): Linear(in_features=128, out_features=64, bias=True)
+    (relu6): ReLU()
+    (out): Linear(in_features=64, out_features=10, bias=True)
+  )
+)
+--------------------------------------------------------------------
+
+
+
+--------------------------------------------------------------------task3_model1_test  Thu_16_54
+Final validation accuracy 0.7833999991416931
+Final train accuracy 0.8668666481971741
+Final test accuracy 0.7823999524116516
+Final train loss 0.3951369524002075
+Batch size: 50, Learning rate: 0.1
+Optimizer: Average SGD, weight decay = 0.002 
+Model1_test(
+  (model): Sequential(
+    (conv1): Conv2d(3, 64, kernel_size=(5, 5), stride=(1, 1), padding=(2, 2))
+    (batchNorm1): BatchNorm2d(64, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    (relu1): ReLU()
+    (maxPool1): MaxPool2d(kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=False)
+    (conv2): Conv2d(64, 128, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+    (batchNorm2): BatchNorm2d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    (dropout1): Dropout2d(p=0.15, inplace=False)
+    (relu2): ReLU()
+    (avgPool1): AvgPool2d(kernel_size=2, stride=2, padding=0)
+    (conv3): Conv2d(128, 256, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+    (batchNorm3): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    (maxPool3): MaxPool2d(kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=False)
+    (relu3): ReLU()
+    (conv4): Conv2d(256, 512, kernel_size=(5, 5), stride=(1, 1), padding=(2, 2))
+    (batchNorm4): BatchNorm2d(512, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    (relu4): ReLU()
+    (flattern): Flatten(start_dim=1, end_dim=-1)
+    (dropout2): Dropout(p=0.5, inplace=False)
+    (fc1): Linear(in_features=8192, out_features=128, bias=True)
+    (relu5): ReLU()
+    (batchNorm5): BatchNorm1d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    (fc2): Linear(in_features=128, out_features=64, bias=True)
+    (relu6): ReLU()
+    (out): Linear(in_features=64, out_features=10, bias=True)
+  )
+)
+--------------------------------------------------------------------
+
+
+
+--------------------------------------------------------------------task3_model1_test  Thu_16_55
+Final validation accuracy 0.7565999627113342
+Final train accuracy 0.8390666842460632
+Final test accuracy 0.758899986743927
+Final train loss 0.46920719742774963
+Batch size: 50, Learning rate: 0.1
+Optimizer: Average SGD, weight decay = 0.002 
+Model1_test(
+  (model): Sequential(
+    (conv1): Conv2d(3, 64, kernel_size=(5, 5), stride=(1, 1), padding=(2, 2))
+    (batchNorm1): BatchNorm2d(64, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    (relu1): ReLU()
+    (maxPool1): MaxPool2d(kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=False)
+    (conv2): Conv2d(64, 128, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+    (batchNorm2): BatchNorm2d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    (dropout1): Dropout2d(p=0.15, inplace=False)
+    (relu2): ReLU()
+    (avgPool1): AvgPool2d(kernel_size=2, stride=2, padding=0)
+    (conv3): Conv2d(128, 256, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+    (batchNorm3): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    (maxPool3): MaxPool2d(kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=False)
+    (relu3): ReLU()
+    (conv4): Conv2d(256, 512, kernel_size=(5, 5), stride=(1, 1), padding=(2, 2))
+    (batchNorm4): BatchNorm2d(512, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    (relu4): ReLU()
+    (flattern): Flatten(start_dim=1, end_dim=-1)
+    (dropout2): Dropout(p=0.5, inplace=False)
+    (fc1): Linear(in_features=8192, out_features=128, bias=True)
+    (relu5): ReLU()
+    (batchNorm5): BatchNorm1d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    (fc2): Linear(in_features=128, out_features=64, bias=True)
+    (relu6): ReLU()
+    (out): Linear(in_features=64, out_features=10, bias=True)
+  )
+)
+--------------------------------------------------------------------
+
+
+
+--------------------------------------------------------------------task3_model1_test  Thu_17_00
+Final validation accuracy 0.792199969291687
+Final train accuracy 0.8660666942596436
+Final test accuracy 0.7846999764442444
+Final train loss 0.40309005975723267
+Batch size: 50, Learning rate: 0.01
+Optimizer: Average SGD, weight decay = 0.002 
+Model1_test(
+  (model): Sequential(
+    (conv1): Conv2d(3, 64, kernel_size=(5, 5), stride=(1, 1), padding=(2, 2))
+    (batchNorm1): BatchNorm2d(64, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    (relu1): ReLU()
+    (maxPool1): MaxPool2d(kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=False)
+    (conv2): Conv2d(64, 128, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+    (batchNorm2): BatchNorm2d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    (dropout1): Dropout2d(p=0.15, inplace=False)
+    (relu2): ReLU()
+    (avgPool1): AvgPool2d(kernel_size=2, stride=2, padding=0)
+    (conv3): Conv2d(128, 256, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+    (batchNorm3): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    (maxPool3): MaxPool2d(kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=False)
+    (relu3): ReLU()
+    (conv4): Conv2d(256, 512, kernel_size=(5, 5), stride=(1, 1), padding=(2, 2))
+    (batchNorm4): BatchNorm2d(512, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    (relu4): ReLU()
+    (flattern): Flatten(start_dim=1, end_dim=-1)
+    (dropout2): Dropout(p=0.5, inplace=False)
+    (fc1): Linear(in_features=8192, out_features=128, bias=True)
+    (relu5): ReLU()
+    (batchNorm5): BatchNorm1d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    (fc2): Linear(in_features=128, out_features=64, bias=True)
+    (relu6): ReLU()
+    (out): Linear(in_features=64, out_features=10, bias=True)
+  )
+)
+--------------------------------------------------------------------
+
+
+
+--------------------------------------------------------------------task3_model1_test  Thu_17_06
+Final validation accuracy 0.7572000026702881
+Final train accuracy 0.846194863319397
+Final test accuracy 0.7576000094413757
+Final train loss 0.5342452526092529
+Batch size: 64, Learning rate: 0.02
+Optimizer: Average SGD, weight decay = 0.002 
+Model1_test(
+  (model): Sequential(
+    (conv1): Conv2d(3, 64, kernel_size=(2, 2), stride=(1, 1), padding=(1, 1))
+    (batchNorm1): BatchNorm2d(64, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    (relu1): ReLU()
+    (maxPool1): MaxPool2d(kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=False)
+    (conv2): Conv2d(64, 128, kernel_size=(5, 5), stride=(1, 1), padding=(2, 2))
+    (batchNorm2): BatchNorm2d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    (dropout1): Dropout2d(p=0.15, inplace=False)
+    (relu2): ReLU()
+    (avgPool1): AvgPool2d(kernel_size=2, stride=2, padding=0)
+    (conv3): Conv2d(128, 256, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+    (batchNorm3): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    (maxPool3): MaxPool2d(kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=False)
+    (relu3): ReLU()
+    (conv4): Conv2d(256, 512, kernel_size=(5, 5), stride=(1, 1), padding=(2, 2))
+    (batchNorm4): BatchNorm2d(512, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    (relu4): ReLU()
+    (flattern): Flatten(start_dim=1, end_dim=-1)
+    (dropout2): Dropout(p=0.5, inplace=False)
+    (fc1): Linear(in_features=8192, out_features=128, bias=True)
+    (relu5): ReLU()
+    (batchNorm5): BatchNorm1d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    (fc2): Linear(in_features=128, out_features=64, bias=True)
+    (relu6): ReLU()
+    (out): Linear(in_features=64, out_features=10, bias=True)
+  )
+)
+--------------------------------------------------------------------
+
+
+
+--------------------------------------------------------------------task3_model1_test  Thu_17_16
+Final validation accuracy 0.8033999800682068
+Final train accuracy 0.8859797120094299
+Final test accuracy 0.7897999882698059
+Final train loss 0.488873690366745
+Batch size: 64, Learning rate: 0.02
+Optimizer: Average SGD, weight decay = 0.002 
+Model1_test(
+  (model): Sequential(
+    (conv1): Conv2d(3, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+    (batchNorm1): BatchNorm2d(64, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    (relu1): ReLU()
+    (maxPool1): MaxPool2d(kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=False)
+    (conv2): Conv2d(64, 128, kernel_size=(5, 5), stride=(1, 1), padding=(2, 2))
+    (batchNorm2): BatchNorm2d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    (dropout1): Dropout2d(p=0.15, inplace=False)
+    (relu2): ReLU()
+    (avgPool1): AvgPool2d(kernel_size=2, stride=2, padding=0)
+    (conv3): Conv2d(128, 256, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+    (batchNorm3): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    (maxPool3): MaxPool2d(kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=False)
+    (relu3): ReLU()
+    (conv4): Conv2d(256, 512, kernel_size=(5, 5), stride=(1, 1), padding=(2, 2))
+    (batchNorm4): BatchNorm2d(512, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    (relu4): ReLU()
+    (flattern): Flatten(start_dim=1, end_dim=-1)
+    (dropout2): Dropout(p=0.5, inplace=False)
+    (fc1): Linear(in_features=8192, out_features=4096, bias=True)
+    (relu5): ReLU()
+    (batchNorm5): BatchNorm1d(4096, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    (fc2): Linear(in_features=4096, out_features=512, bias=True)
+    (relu6): ReLU()
+    (out): Linear(in_features=512, out_features=10, bias=True)
+  )
+)
+--------------------------------------------------------------------
+
+
+
+--------------------------------------------------------------------task3_model1_test  Thu_17_22
+Final validation accuracy 0.8003999590873718
+Final train accuracy 0.8936033248901367
+Final test accuracy 0.7964999675750732
+Final train loss 0.7252472043037415
+Batch size: 64, Learning rate: 0.03
+Optimizer: Average SGD, weight decay = 0.002 
+Model1_test(
+  (model): Sequential(
+    (conv1): Conv2d(3, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+    (batchNorm1): BatchNorm2d(64, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    (relu1): ReLU()
+    (maxPool1): MaxPool2d(kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=False)
+    (conv2): Conv2d(64, 128, kernel_size=(5, 5), stride=(1, 1), padding=(2, 2))
+    (batchNorm2): BatchNorm2d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    (dropout1): Dropout2d(p=0.15, inplace=False)
+    (relu2): ReLU()
+    (avgPool1): AvgPool2d(kernel_size=2, stride=2, padding=0)
+    (conv3): Conv2d(128, 256, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+    (batchNorm3): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    (maxPool3): MaxPool2d(kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=False)
+    (relu3): ReLU()
+    (conv4): Conv2d(256, 512, kernel_size=(5, 5), stride=(1, 1), padding=(2, 2))
+    (batchNorm4): BatchNorm2d(512, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    (relu4): ReLU()
+    (flattern): Flatten(start_dim=1, end_dim=-1)
+    (dropout2): Dropout(p=0.5, inplace=False)
+    (fc1): Linear(in_features=8192, out_features=2048, bias=True)
+    (relu5): ReLU()
+    (batchNorm5): BatchNorm1d(2048, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    (fc2): Linear(in_features=2048, out_features=512, bias=True)
+    (relu6): ReLU()
+    (dropout3): Dropout(p=0.1, inplace=False)
+    (out): Linear(in_features=512, out_features=10, bias=True)
+  )
+)
+--------------------------------------------------------------------
+
+
+
+--------------------------------------------------------------------task3_model1_test  Thu_17_30
+Final validation accuracy 0.8155999779701233
+Final train accuracy 0.9046052694320679
+Final test accuracy 0.812999963760376
+Final train loss 0.5346168875694275
+Batch size: 64, Learning rate: 0.03
+Optimizer: Average SGD, weight decay = 0.002 
+Model1_test(
+  (model): Sequential(
+    (conv1): Conv2d(3, 32, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+    (batchNorm1): BatchNorm2d(32, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    (relu1): ReLU()
+    (convx): Conv2d(32, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+    (batchNormx): BatchNorm2d(64, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    (relux): ReLU()
+    (maxPoolx): MaxPool2d(kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=False)
+    (conv2): Conv2d(64, 128, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+    (batchNorm2): BatchNorm2d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    (dropout1): Dropout2d(p=0.15, inplace=False)
+    (relu2): ReLU()
+    (avgPool1): AvgPool2d(kernel_size=2, stride=2, padding=0)
+    (conv3): Conv2d(128, 256, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+    (batchNorm3): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    (maxPool3): MaxPool2d(kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=False)
+    (relu3): ReLU()
+    (conv4): Conv2d(256, 512, kernel_size=(5, 5), stride=(1, 1), padding=(2, 2))
+    (batchNorm4): BatchNorm2d(512, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    (relu4): ReLU()
+    (flattern): Flatten(start_dim=1, end_dim=-1)
+    (dropout2): Dropout(p=0.5, inplace=False)
+    (fc1): Linear(in_features=8192, out_features=2048, bias=True)
+    (relu5): ReLU()
+    (batchNorm5): BatchNorm1d(2048, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    (fc2): Linear(in_features=2048, out_features=512, bias=True)
+    (relu6): ReLU()
+    (dropout3): Dropout(p=0.1, inplace=False)
+    (out): Linear(in_features=512, out_features=10, bias=True)
+  )
+)
+--------------------------------------------------------------------
+
+
